@@ -1,4 +1,7 @@
 .search {
+  flex: 0 0 50%;
+
+  display: flex;
   &__input {
     font-family: inherit;
     color: inherit;
@@ -9,6 +12,11 @@
   }
 
   &__button {
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &__icon {
