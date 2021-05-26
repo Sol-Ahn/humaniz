@@ -1,9 +1,23 @@
 .header {
-  font-size: 1.6rem;
-  color: $color-grey-dark-1;
-  height: 6rem;
+	font-size: 1.6rem;
+	color: $color-grey-dark-1;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__logo {
+		width: 18rem;
+		height: 7rem;
+	}
+
+	.user-nav {
+	}
+
+	&-menu {
+		&__icon {
+			width: 2rem;
+			height: 2rem;
+		}
+	}
 }

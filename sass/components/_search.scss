@@ -1,18 +1,24 @@
 .search {
-  &__input {
-    font-family: inherit;
-    color: inherit;
+	flex: 0 0 45%;
+	&__input {
+		font-family: inherit;
+		color: inherit;
 
-    &:focus {
-      outline: none;
-    }
-  }
+		&:focus {
+			outline: none;
+		}
+	}
 
-  &__button {
-  }
+	&__btn {
+		border: none;
 
-  &__icon {
-    height: 2rem;
-    width: 2rem;
-  }
+		:focus {
+			outline: none;
+		}
+	}
+
+	&__icon {
+		height: 2rem;
+		width: 2rem;
+	}
 }
