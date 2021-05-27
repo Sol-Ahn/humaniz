@@ -1,4 +1,8 @@
 .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &__input {
     font-family: inherit;
     font-size: inherit;
@@ -24,6 +28,8 @@
 
   &__btn {
     border: none;
+    background: none;
+    margin-left: -4.5rem;
 
     &:focus {
       outline: none;
@@ -31,8 +37,8 @@
   }
 
   &__icon {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
     fill: $color-blue-light-2;
   }
 }
