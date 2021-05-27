@@ -1,43 +1,38 @@
 .search {
-<<<<<<< HEAD
-  flex: 0 0 50%;
-
-  display: flex;
   &__input {
     font-family: inherit;
+    font-size: inherit;
     color: inherit;
-=======
-	flex: 0 0 45%;
-	&__input {
-		font-family: inherit;
-		color: inherit;
->>>>>>> 6a3a96a5e7206dce0309ce53fda635bc1ea3852d
+    border: 1px solid $color-grey-light-2;
+    border-radius: 5px;
+    width: 48.6rem;
+    height: 5rem;
+    margin: 2rem 0;
 
-		&:focus {
-			outline: none;
-		}
-	}
+    &:focus {
+      outline: none;
+      background-color: #fff;
+    }
 
-<<<<<<< HEAD
-  &__button {
+    &::placeholder {
+      font-weight: 300;
+      font-size: $font-medium-2;
+      color: $color-grey-dark-1;
+      padding: 1rem 0.7rem;
+    }
+  }
+
+  &__btn {
     border: none;
 
     &:focus {
       outline: none;
     }
   }
-=======
-	&__btn {
-		border: none;
->>>>>>> 6a3a96a5e7206dce0309ce53fda635bc1ea3852d
 
-		:focus {
-			outline: none;
-		}
-	}
-
-	&__icon {
-		height: 2rem;
-		width: 2rem;
-	}
+  &__icon {
+    height: 4rem;
+    width: 4rem;
+    fill: $color-blue-light-2;
+  }
 }

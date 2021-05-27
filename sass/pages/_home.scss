@@ -1,20 +1,56 @@
+.container {
+  max-width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  height: 7rem;
+  font-size: 1.6rem;
+  color: $color-grey-dark-1;
+}
+
+.hero {
+  background-color: red;
+  height: 40rem;
+}
+
 .section-slider {
+  background-color: orange;
+  height: 41.8rem;
 }
 
 .section-new {
+  background-color: yellow;
+  height: 177.4rem;
 }
 
 .section-category {
+  background-color: yellowgreen;
+  height: 30.8rem;
 }
 
 .section-hot {
+  background-color: green;
+  height: 177.4rem;
 }
 
 .section-event {
+  background-color: skyblue;
+  height: 42.8rem;
 }
 
 .section-favor {
+  background-color: pink;
+  height: 177.4rem;
 }
 
 .section-about {
+  background-color: hotpink;
+  height: 41.8rem;
+}
+
+.footer {
+  background-color: yellow;
+  height: 25rem;
 }

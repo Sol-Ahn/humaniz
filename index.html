@@ -85,48 +85,61 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <header class="header">
-      <img
-        src="/resources/img/logo-small.png"
-        alt="Humaniz logo"
-        class="header__logo"
-      />
-      <form action="#" class="search">
-        <input type="text" class="search__input" placeholder="검색" />
-        <button class="search__btn">
-          <svg class="search__icon">
-            <use xlink:href="/resources/icon/sprite.svg#icon-search"></use>
-          </svg>
-        </button>
-      </form>
-      <div class="user-nav">
-        <a href="#" class="login">Login</a>
-        <ul class="user-nav__menu">
-          <li class="user-nav__item">
-            <a href="#" class="user-nav__link">MyPage</a>
-          </li>
-          <li class="user-nav__item">
-            <a href="#" class="user-nav__link">Logout</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header-menu">
-        <button class="header-menu__btn">
-          <svg class="header-menu__icon">
-            <use xlink:href="/resources/icon/sprite.svg#icon-menu"></use>
-          </svg>
-        </button>
-      </div>
-    </header>
-    <main>
-      <section class="section-slider"></section>
-      <section class="section-new"></section>
-      <section class="section-category"></section>
-      <section class="section-hot"></section>
-      <section class="section-event"></section>
-      <section class="section-favor"></section>
-      <section class="section-about"></section>
-    </main>
-    <footer class="footer"></footer>
+    <div class="container">
+      <header class="header">
+        <img
+          src="/resources/img/logo-small.png"
+          alt="Humaniz logo"
+          class="header__logo"
+        />
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="검색" />
+          <button class="search__btn">
+            <svg class="search__icon">
+              <use xlink:href="/resources/icon/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="user-nav">
+          <a href="#" class="login">Login</a>
+          <ul class="user-nav__menu">
+            <li class="user-nav__item">
+              <a href="#" class="user-nav__link">MyPage</a>
+            </li>
+            <li class="user-nav__item">
+              <a href="#" class="user-nav__link">Logout</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-menu">
+          <button class="header-menu__btn">
+            <svg class="header-menu__icon">
+              <use xlink:href="/resources/icon/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <main>
+        <div class="hero">
+            <div class="hero__text">
+              <h1 class="heading-primary">
+                읽기만 해도 똑똑해지는 인문학 컨텐츠 구독 서비스
+              </h1>
+              <p class="paragraph">지금 휴머니즈를 구독하고 재미있게 똑똑해지세요!</p>
+            </div>
+            <div class="hero__photo">
+              <img src="/resources/img/header-home.png" alt="Home hero" class="hero__img">
+            </div>
+          </div>
+        <section class="section-slider"></section>
+        <section class="section-new"></section>
+        <section class="section-category"></section>
+        <section class="section-hot"></section>
+        <section class="section-event"></section>
+        <section class="section-favor"></section>
+        <section class="section-about"></section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
   </body>
 </html>

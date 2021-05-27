@@ -3,57 +3,111 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
   box-sizing: border-box;
-}
+  min-height: 100vh; }
 
 body {
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
-  line-height: 1.5;
-}
+  line-height: 1.5; }
 
-.search {
-  flex: 0 0 45%;
-}
 .search__input {
   font-family: inherit;
+  font-size: inherit;
   color: inherit;
-}
-.search__input:focus {
-  outline: none;
-}
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  width: 48.6rem;
+  height: 5rem;
+  margin: 2rem 0; }
+  .search__input:focus {
+    outline: none;
+    background-color: #fff; }
+  .search__input::placeholder {
+    font-weight: 300;
+    font-size: 2.2rem;
+    color: #959595;
+    padding: 1rem 0.7rem; }
+
 .search__btn {
-  border: none;
-}
-.search__btn :focus {
-  outline: none;
-}
+  border: none; }
+  .search__btn:focus {
+    outline: none; }
+
 .search__icon {
-  height: 2rem;
-  width: 2rem;
-}
+  height: 4rem;
+  width: 4rem;
+  fill: #2196f3; }
+
 .header {
-  font-size: 1.6rem;
-  height: 6rem;
-  color: #959595;
+  margin: 3.4rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-.header__logo {
-  margin-left: 0.5rem;
-  width: 18rem;
+  align-items: center; }
+  .header__logo {
+    width: 18rem;
+    height: 7rem; }
+  .header .search {
+    margin-right: auto; }
+  .header .user-nav {
+    text-decoration: none; }
+    .header .user-nav__menu {
+      list-style: none; }
+      .header .user-nav__menu__item {
+        text-transform: uppercase; }
+  .header-menu__icon {
+    width: 7rem;
+    height: 7rem;
+    fill: #2196f3; }
+
+.container {
+  max-width: 120rem;
+  height: 100%;
+  margin: 0 auto; }
+
+.header {
   height: 7rem;
-}
-.header-menu__icon {
-  width: 2rem;
-  height: 2rem;
-}
+  font-size: 1.6rem;
+  color: #959595; }
+
+.hero {
+  background-color: red;
+  height: 40rem; }
+
+.section-slider {
+  background-color: orange;
+  height: 41.8rem; }
+
+.section-new {
+  background-color: yellow;
+  height: 177.4rem; }
+
+.section-category {
+  background-color: yellowgreen;
+  height: 30.8rem; }
+
+.section-hot {
+  background-color: green;
+  height: 177.4rem; }
+
+.section-event {
+  background-color: skyblue;
+  height: 42.8rem; }
+
+.section-favor {
+  background-color: pink;
+  height: 177.4rem; }
+
+.section-about {
+  background-color: hotpink;
+  height: 41.8rem; }
+
+.footer {
+  background-color: yellow;
+  height: 25rem; }
