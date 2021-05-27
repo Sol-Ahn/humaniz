@@ -1,16 +1,24 @@
 .search {
+<<<<<<< HEAD
   flex: 0 0 50%;
 
   display: flex;
   &__input {
     font-family: inherit;
     color: inherit;
+=======
+	flex: 0 0 45%;
+	&__input {
+		font-family: inherit;
+		color: inherit;
+>>>>>>> 6a3a96a5e7206dce0309ce53fda635bc1ea3852d
 
-    &:focus {
-      outline: none;
-    }
-  }
+		&:focus {
+			outline: none;
+		}
+	}
 
+<<<<<<< HEAD
   &__button {
     border: none;
 
@@ -18,9 +26,18 @@
       outline: none;
     }
   }
+=======
+	&__btn {
+		border: none;
+>>>>>>> 6a3a96a5e7206dce0309ce53fda635bc1ea3852d
 
-  &__icon {
-    height: 2rem;
-    width: 2rem;
-  }
+		:focus {
+			outline: none;
+		}
+	}
+
+	&__icon {
+		height: 2rem;
+		width: 2rem;
+	}
 }

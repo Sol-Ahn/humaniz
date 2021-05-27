@@ -1,4 +1,5 @@
 .header {
+<<<<<<< HEAD
   font-size: 1.6rem;
   height: 6rem;
   color: $color-grey-dark-1;
@@ -11,4 +12,27 @@
   &__logo {
     margin-left: 0.5rem;
   }
+=======
+	font-size: 1.6rem;
+	color: $color-grey-dark-1;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__logo {
+		width: 18rem;
+		height: 7rem;
+	}
+
+	.user-nav {
+	}
+
+	&-menu {
+		&__icon {
+			width: 2rem;
+			height: 2rem;
+		}
+	}
+>>>>>>> 6a3a96a5e7206dce0309ce53fda635bc1ea3852d
 }
