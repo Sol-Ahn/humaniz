@@ -12,17 +12,13 @@
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  & > * {
-    width: 120rem;
-  }
+  width: 120rem;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 .section-slider {
-  background-color: orange;
+  background-color: rgba($color-blue-light-1, 0.2);
   height: 41.8rem;
 }
 
