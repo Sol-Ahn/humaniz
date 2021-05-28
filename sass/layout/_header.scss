@@ -1,11 +1,10 @@
 .header {
-  margin: 3.4rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   position: fixed;
+  top: 0;
 
   &__logo {
     width: 18rem;

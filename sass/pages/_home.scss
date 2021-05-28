@@ -1,5 +1,5 @@
 .header {
-  width: 100vw;
+  width: 120rem;
   height: 7rem;
   font-size: 1.6rem;
   color: $color-grey-dark-1;
@@ -8,7 +8,17 @@
 .hero {
   width: 120rem;
   min-height: 40rem;
-  margin: 7rem auto;
+  margin: 7rem auto 0 auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & > * {
+    width: 120rem;
+  }
 }
 
 .section-slider {
