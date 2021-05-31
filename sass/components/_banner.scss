@@ -1,0 +1,43 @@
+.banner {
+  width: 120rem;
+  height: 30rem;
+  margin: 6.4rem auto;
+}
+
+.banner__event {
+  background-image: url(/resources/img/banner-event.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__description {
+    display: inline-block;
+    font-weight: 700;
+    margin-left: 20rem;
+
+    &--name {
+      font-size: $font-medium-2;
+      margin-top: 3.2rem;
+    }
+
+    &--title {
+      font-size: $font-large-2;
+      margin: 2.6rem 0;
+    }
+
+    &--duration,
+    &--participants {
+      font-size: $font-default;
+    }
+  }
+}
+
+.banner__about {
+  background-image: url(/resources/img/banner-about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    display: inline-block;
+    margin: 5rem 40rem 2.6rem 10rem;
+  }
+}

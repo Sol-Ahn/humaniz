@@ -3,6 +3,7 @@
   &:visited {
     font-size: $font-medium-2;
     font-weight: 500;
+    text-decoration: none;
     background-color: $color-blue-dark-1;
     color: #fff;
     border: none;
@@ -18,8 +19,15 @@
   }
 
   &__subscribe {
-    text-decoration: none;
     margin-top: 3rem;
+  }
+
+  &__about {
+    margin-left: 10rem;
+
+    span {
+      margin-left: 1rem;
+    }
   }
 }
 
