@@ -221,6 +221,56 @@ body {
     .hero__text .paragraph {
       font-size: 2.2rem; }
 
+.footer {
+  background-color: #00203b;
+  color: #fff; }
+  .footer__nav {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 37.5rem;
+    padding: 3.7rem 0;
+    display: flex;
+    align-items: center; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 4rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #6ec6ff; }
+  .footer__box {
+    display: flex; }
+    .footer__box--logo {
+      align-items: center;
+      padding: 2rem 0;
+      margin-left: 37rem;
+      display: flex;
+      align-content: center; }
+      .footer__box--logo span {
+        font-size: 1.2rem;
+        margin-left: 0.8rem; }
+    .footer__box--sns {
+      display: inline-block;
+      align-self: center;
+      margin-left: 35rem; }
+  .footer__sns__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: #fff;
+    cursor: pointer; }
+    .footer__sns__icon:not(:last-child) {
+      margin-right: 3rem; }
+  .footer__text, .footer__copyright {
+    margin-left: 37rem; }
+    .footer__text:not(:last-child), .footer__copyright:not(:last-child) {
+      margin-bottom: 1.5rem; }
+
 .header {
   width: 120rem;
   height: 7rem;
@@ -266,5 +316,4 @@ body {
   height: 41.8rem; }
 
 .footer {
-  background-color: yellow;
   height: 25rem; }
