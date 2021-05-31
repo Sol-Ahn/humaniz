@@ -28,8 +28,11 @@
 }
 
 .section-category {
-  background-color: yellowgreen;
   height: 30.8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-hot {
