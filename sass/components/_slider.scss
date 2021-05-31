@@ -1,0 +1,31 @@
+.main-slider {
+  width: 120rem;
+
+  .slide {
+    display: flex;
+    justify-content: center;
+
+    &__description {
+      &__name {
+        font-size: $font-medium-1;
+        font-weight: 500;
+      }
+
+      &__title {
+        margin: 2.5rem;
+      }
+
+      &__hashtags {
+        display: flex;
+
+        &--list {
+          list-style: none;
+        }
+
+        &--item {
+          font-size: $font-default;
+        }
+      }
+    }
+  }
+}
