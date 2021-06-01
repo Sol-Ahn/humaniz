@@ -11,14 +11,13 @@
   margin: 7rem auto 0 auto;
 }
 
-.main {
-  width: 120rem;
-  margin: 0 auto;
-  display: inline-block;
+.main-slider {
+  background-color: rgba($color-blue-light-1, 0.2);
 }
 
-.section-slider {
-  background-color: rgba($color-blue-light-1, 0.2);
+.main {
+  width: 120rem;
+  display: inline-block;
 }
 
 .section-category {
