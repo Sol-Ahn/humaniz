@@ -89,36 +89,38 @@
   </head>
   <body>
     <header class="header">
-      <img
-        src="/resources/img/logo-small.png"
-        alt="Humaniz logo"
-        class="header__logo"
-      />
-      <form action="#" class="search">
-        <input type="text" class="search__input" placeholder="검색" />
-        <button class="search__btn">
-          <svg class="search__icon">
-            <use xlink:href="/resources/icon/sprite.svg#icon-search"></use>
-          </svg>
-        </button>
-      </form>
-      <div class="user-nav">
-        <a href="#" class="user-nav__link">Login</a>
-        <ul class="user-nav__menu">
-          <li class="user-nav__item">
-            <a href="#" class="user-nav__link">MyPage</a>
-          </li>
-          <li class="user-nav__item">
-            <a href="#" class="user-nav__link">Logout</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header-menu">
-        <button class="header-menu__btn">
-          <svg class="header-menu__icon">
-            <use xlink:href="/resources/icon/sprite.svg#icon-menu"></use>
-          </svg>
-        </button>
+      <div class="header__box">
+        <img
+          src="/resources/img/logo-small.png"
+          alt="Humaniz logo"
+          class="header__box__logo"
+        />
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="검색" />
+          <button class="search__btn">
+            <svg class="search__icon">
+              <use xlink:href="/resources/icon/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="user-nav">
+          <a href="#" class="user-nav__link">Login</a>
+          <ul class="user-nav__menu">
+            <li class="user-nav__item">
+              <a href="#" class="user-nav__link">MyPage</a>
+            </li>
+            <li class="user-nav__item">
+              <a href="#" class="user-nav__link">Logout</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__box__menu">
+          <button class="header__box__menu--btn">
+            <svg class="header__box__menu--icon">
+              <use xlink:href="/resources/icon/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <div class="hero">
@@ -185,7 +187,7 @@
         </div>
       </div>
     </div>
-    <main>
+    <main class="main">
       <section class="section-new">
         <h2 class="heading-2">NEW 컨텐츠</h2>
         <div class="home-contents">
@@ -432,46 +434,48 @@
         </div>
       </section>
       <section class="section-category">
-        <h3 class="heading-3">주제별 카테고리</h3>
-        <div class="category__box">
-          <img
-            src="/resources/img/category-1.png"
-            alt="Category image 1"
-            class="category__box__img"
-          />
-          <p class="category__box__name">카테고리</p>
-        </div>
-        <div class="category__box">
-          <img
-            src="/resources/img/category-2.png"
-            alt="Category image 2"
-            class="category__box__img"
-          />
-          <p class="category__box__name">카테고리</p>
-        </div>
-        <div class="category__box">
-          <img
-            src="/resources/img/category-3.png"
-            alt="Category image 3"
-            class="category__box__img"
-          />
-          <p class="category__box__name">카테고리</p>
-        </div>
-        <div class="category__box">
-          <img
-            src="/resources/img/category-4.png"
-            alt="Category image 4"
-            class="category__box__img"
-          />
-          <p class="category__box__name">카테고리</p>
-        </div>
-        <div class="category__box">
-          <img
-            src="/resources/img/category-5.png"
-            alt="Category image 5"
-            class="category__box__img"
-          />
-          <p class="category__box__name">카테고리</p>
+        <div class="category">
+          <h3 class="heading-3">주제별 카테고리</h3>
+          <div class="category__box">
+            <img
+              src="/resources/img/category-1.png"
+              alt="Category image 1"
+              class="category__box__img"
+            />
+            <p class="category__box__name">카테고리</p>
+          </div>
+          <div class="category__box">
+            <img
+              src="/resources/img/category-2.png"
+              alt="Category image 2"
+              class="category__box__img"
+            />
+            <p class="category__box__name">카테고리</p>
+          </div>
+          <div class="category__box">
+            <img
+              src="/resources/img/category-3.png"
+              alt="Category image 3"
+              class="category__box__img"
+            />
+            <p class="category__box__name">카테고리</p>
+          </div>
+          <div class="category__box">
+            <img
+              src="/resources/img/category-4.png"
+              alt="Category image 4"
+              class="category__box__img"
+            />
+            <p class="category__box__name">카테고리</p>
+          </div>
+          <div class="category__box">
+            <img
+              src="/resources/img/category-5.png"
+              alt="Category image 5"
+              class="category__box__img"
+            />
+            <p class="category__box__name">카테고리</p>
+          </div>
         </div>
       </section>
       <section class="section-hot">
@@ -1071,6 +1075,17 @@
           cssEase: "linear",
           autoplay: true,
         });
+
+        // $("body").waypoint(
+        //   function (direction) {
+        //     if (direction === "down") {
+        //       $(".header").addClass("sticky");
+        //     } else {
+        //       $(".header").removeClass("sticky");
+        //     }
+        //   },
+        //   { offset: "50px" }
+        // );
       });
     </script>
   </body>

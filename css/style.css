@@ -122,21 +122,27 @@ body {
     overflow: hidden;
     text-overflow: ellipsis; }
 
-.category__box {
-  margin: 0 2rem;
-  position: relative; }
-  .category__box__img {
-    width: 18rem;
-    height: 18rem;
-    filter: brightness(0.7); }
-  .category__box__name {
-    font-size: 2.2rem;
-    font-weight: 500;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+.category {
+  width: 120rem;
+  margin: 6.4rem 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .category__box {
+    margin: 0 2rem;
+    position: relative; }
+    .category__box__img {
+      width: 18rem;
+      height: 18rem;
+      filter: brightness(0.7); }
+    .category__box__name {
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
 
 .banner {
   width: 120rem;
@@ -172,11 +178,10 @@ body {
   width: 120rem;
   margin: 0 auto; }
   .slider .slide {
-    width: 120rem;
+    width: 100%;
     padding: 2rem;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    justify-content: center; }
     .slider .slide__description {
       display: flex;
       flex-direction: column;
@@ -194,31 +199,31 @@ body {
         font-size: 1.6rem;
         flex: 0 0 15%; }
 
-.header {
+.header__box {
+  width: 120rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0; }
-  .header__logo {
+  align-items: center; }
+  .header__box__logo {
     width: 18rem;
     height: 7rem; }
-  .header .search {
+  .header__box .search {
     margin-right: auto; }
-  .header .user-nav {
+  .header__box .user-nav {
     width: 18rem;
     height: 5rem;
     position: relative;
     font-weight: 500;
     text-align: center; }
-    .header .user-nav__menu {
+    .header__box .user-nav__menu {
       list-style: none; }
-    .header .user-nav__item {
+    .header__box .user-nav__item {
       width: 18rem;
       height: 5rem;
       position: absolute;
       visibility: hidden; }
-    .header .user-nav__link:link, .header .user-nav__link:visited {
+    .header__box .user-nav__link:link, .header__box .user-nav__link:visited {
       font-size: 2.6rem;
       color: #000;
       text-transform: uppercase;
@@ -229,12 +234,12 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-  .header-menu__btn {
+  .header__box__menu--btn {
     width: 7.8rem;
     height: 7rem;
     border: none;
     background: none; }
-  .header-menu__icon {
+  .header__box__menu--icon {
     width: 100%;
     height: 100%;
     fill: #2196f3; }
@@ -307,10 +312,8 @@ body {
   grid-row-gap: 3.5rem; }
 
 .header {
-  width: 120rem;
-  height: 7rem;
-  font-size: 1.6rem;
-  color: #959595; }
+  width: 100%;
+  font-size: 1.6rem; }
 
 .hero {
   width: 120rem;
@@ -321,12 +324,8 @@ body {
   background-color: rgba(110, 198, 255, 0.2); }
 
 .main {
-  width: 120rem;
-  display: inline-block; }
-
-.section-category {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center; }
 
 .footer {

@@ -1,9 +1,17 @@
 .header {
-  width: 120rem;
-  height: 7rem;
+  width: 100%;
   font-size: 1.6rem;
-  color: $color-grey-dark-1;
 }
+
+// .sticky {
+//   position: fixed;
+//   top: 0;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   background-color: rgba($color-blue-light-2, 0.4);
+//   display: inline-block;
+//   z-index: 9999;
+// }
 
 .hero {
   width: 120rem;
@@ -16,13 +24,8 @@
 }
 
 .main {
-  width: 120rem;
-  display: inline-block;
-}
-
-.section-category {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
