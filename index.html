@@ -149,13 +149,39 @@
             <div class="slide__description">
               <p class="slide__description__name">지금 보면 딱인 컨텐츠</p>
               <h2 class="heading-2 slide__description__title">
-                Amet minim mollitnondeserunt ullamco lopwdon sitaliquad
+                Amet minim mollitnon deseruntullamco lopwdon sitaliquad
               </h2>
               <ul class="slide__description__hashtags--list">
                 <li class="slide__description__hashtags--item">#해시태그</li>
                 <li class="slide__description__hashtags--item">#해시태그</li>
                 <li class="slide__description__hashtags--item">#해시태그</li>
               </ul>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="/resources/img/slide-1.png"
+              alt="Slide Photo 1"
+              class="slide__img"
+            />
+            <div class="slide__description">
+              <p class="slide__description__name">공지사항</p>
+              <h2 class="heading-2 slide__description__title">
+                Amet minim mollitnon deseruntullamco lopwdon sitaliquad
+              </h2>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="/resources/img/slide-1.png"
+              alt="Slide Photo 1"
+              class="slide__img"
+            />
+            <div class="slide__description">
+              <p class="slide__description__name">친구추천 이벤트</p>
+              <h2 class="heading-2 slide__description__title">
+                Amet minim mollitnon deseruntullamco lopwdon sitaliquad
+              </h2>
             </div>
           </div>
         </div>
@@ -1035,5 +1061,17 @@
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script src="/resources/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(".main-slider").slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          fade: true,
+          cssEase: "linear",
+          autoplay: true,
+        });
+      });
+    </script>
   </body>
 </html>

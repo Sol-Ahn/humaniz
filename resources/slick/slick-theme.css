@@ -19,16 +19,11 @@
 /* Arrows */
 .slick-prev,
 .slick-next {
-  font-size: 0;
-  line-height: 0;
-
   position: absolute;
   top: 50%;
 
   display: block;
 
-  width: 20px;
-  height: 20px;
   padding: 0;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
@@ -62,10 +57,6 @@
 
 .slick-prev:before,
 .slick-next:before {
-  font-family: "slick";
-  font-size: 20px;
-  line-height: 1;
-
   opacity: 0.75;
   color: white;
 
@@ -74,31 +65,51 @@
 }
 
 .slick-prev {
-  left: -25px;
+  left: -5%;
 }
 [dir="rtl"] .slick-prev {
   right: -25px;
   left: auto;
 }
 .slick-prev:before {
-  content: "←";
+  background-image: url("/resources/icon/SVG/chevron-left.svg");
+  background-size: 50px 50px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  content: "";
 }
 [dir="rtl"] .slick-prev:before {
-  content: "→";
+  background-image: url("/resources/icon/SVG/chevron-right.svg");
+  background-size: 50px 50px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  content: "";
 }
 
 .slick-next {
-  right: -25px;
+  right: -5%;
 }
 [dir="rtl"] .slick-next {
   right: auto;
   left: -25px;
 }
 .slick-next:before {
-  content: "→";
+  background-image: url("/resources/icon/SVG/chevron-right.svg");
+  background-size: 50px 50px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  content: "";
 }
 [dir="rtl"] .slick-next:before {
-  content: "←";
+  background-image: url("/resources/icon/SVG/chevron-left.svg");
+  background-size: 50px 50px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  content: "";
 }
 
 /* Dots */
@@ -108,7 +119,8 @@
 
 .slick-dots {
   position: absolute;
-  bottom: -25px;
+  left: 40%;
+  bottom: 10%;
 
   display: block;
 
@@ -180,5 +192,5 @@
 }
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
-  color: black;
+  color: #0069c0;
 }
