@@ -99,6 +99,19 @@ body {
 .btn-icon {
   fill: #c4c4c4; }
 
+.btn-interest {
+  width: 18rem;
+  font-size: 1.6rem;
+  color: #959595;
+  background-color: #e5e5e5;
+  border: none;
+  border-radius: 5rem;
+  padding: 0.7rem;
+  cursor: pointer; }
+  .btn-interest--choice {
+    background-color: #2196f3;
+    color: #fff; }
+
 .contents-box {
   width: 28.2rem; }
   .contents-box__thumbnail {
@@ -209,6 +222,18 @@ body {
       .slider .slide__description__hashtags--item {
         font-size: 1.6rem;
         flex: 0 0 15%; }
+
+.input {
+  width: 58.8rem;
+  outline: none;
+  border: 1px solid #c4c4c4;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  font-size: 2.2rem;
+  font-family: inherit;
+  padding: 1.5rem; }
+  .input::placeholder {
+    color: #959595; }
 
 .header__box {
   width: 120rem;

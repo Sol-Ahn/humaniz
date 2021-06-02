@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/resources/slick/slick.css" />
+    <link rel="stylesheet" href="/resources/slick/slick-theme.css" />
+    <title>Humaniz</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="resources/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="resources/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="resources/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="resources/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="resources/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="resources/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="resources/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="resources/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="resources/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="resources/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="resources/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="resources/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="resources/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="resources/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__box">
+        <img
+          src="/resources/img/logo-small.png"
+          alt="Humaniz logo"
+          class="header__box__logo"
+        />
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="검색" />
+          <button class="search__btn">
+            <svg class="search__icon">
+              <use xlink:href="/resources/icon/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="user-nav">
+          <a href="#" class="user-nav__link">Login</a>
+          <ul class="user-nav__sub">
+            <li class="user-nav__sub__item">
+              <a href="#" class="user-nav__link">MyPage</a>
+            </li>
+            <li class="user-nav__sub__item">
+              <a href="#" class="user-nav__link">Logout</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-nav">
+          <button class="btn__menu">
+            <svg class="btn__menu--icon">
+              <use xlink:href="/resources/icon/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <ul class="menu-nav__sub">
+            <li class="menu-nav__sub__item">
+              <a href="#" class="menu-nav__sub__link">전체</a>
+            </li>
+            <li class="menu-nav__sub__item">
+              <a href="#" class="menu-nav__sub__link">주제별</a>
+            </li>
+            <li class="menu-nav__sub__item">
+              <a href="#" class="menu-nav__sub__link">연령별</a>
+            </li>
+            <li class="menu-nav__sub__item">
+              <a href="#" class="menu-nav__sub__link">테마별</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="signup">
+      <h2 class="heading-2">회원가입</h2>
+      <form action="" method="post" class="form">
+        <div class="id">
+          <label for="id">아이디</label>
+          <input type="text" id="id" name="id" class="id" />
+        </div>
+        <div class="pw">
+          <label for="pw">비밀번호</label>
+          <input type="password" id="pw" name="pw" class="pw" />
+        </div>
+        <div class="pw-check">
+          <label for="pw-check">비밀번호 확인</label>
+          <input
+            type="password"
+            id="pw-check"
+            name="pw-check"
+            class="pw-check"
+          />
+        </div>
+        <div class="name">
+          <label for="name">이름</label>
+          <input type="text" id="name" name="name" class="name" />
+        </div>
+        <div class="email">
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email" class="email" />
+        </div>
+        <div class="phone">
+          <label for="phone">전화번호</label>
+          <input type="text" id="phone" name="phone" class="phone" />
+        </div>
+        <div class="birth">
+          <label for="birth">생년월일</label>
+          <input type="text" id="birth" name="birth" class="birth" />
+        </div>
+        <div class="interest">
+          <label for="interest"
+            >관심사<span>(3개 이상 선택해주세요)</span></label
+          >
+          <div class="interest__box">
+            <button type="button" class="btn-interest btn-interest--choice">
+              관심사
+            </button>
+            <button type="button" class="btn-interest btn-interest--choice">
+              관심사
+            </button>
+            <button type="button" class="btn-interest btn-interest--choice">
+              관심사
+            </button>
+            <button type="button" class="btn-interest">관심사</button>
+            <button type="button" class="btn-interest">관심사</button>
+            <button type="button" class="btn-interest">관심사</button>
+            <button type="button" class="btn-interest">관심사</button>
+            <button type="button" class="btn-interest">관심사</button>
+            <button type="button" class="btn-interest">관심사</button>
+            <button type="button" class="btn-interest">관심사</button>
+            <button type="button" class="btn-interest">관심사</button>
+            <button type="button" class="btn-interest">관심사</button>
+            <button type="button" class="btn-interest">관심사</button>
+            <button type="button" class="btn-interest">관심사</button>
+            <button type="button" class="btn-interest">관심사</button>
+          </div>
+        </div>
+        <div class="agreement">
+          <label for="">약관동의</label>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

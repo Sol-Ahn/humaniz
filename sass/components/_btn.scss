@@ -48,3 +48,19 @@
 .btn-icon {
   fill: $color-grey-light-2;
 }
+
+.btn-interest {
+  width: 18rem;
+  font-size: $font-default;
+  color: $color-grey-dark-1;
+  background-color: $color-grey-light-1;
+  border: none;
+  border-radius: 5rem;
+  padding: 0.7rem;
+  cursor: pointer;
+
+  &--choice {
+    background-color: $color-blue-light-2;
+    color: #fff;
+  }
+}

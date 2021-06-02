@@ -1,0 +1,14 @@
+.input {
+  width: 58.8rem;
+  outline: none;
+  border: 1px solid $color-grey-light-2;
+  border-radius: 3px;
+  background-color: $color-grey-light-0;
+  font-size: $font-medium-2;
+  font-family: inherit;
+  padding: 1.5rem;
+
+  &::placeholder {
+    color: $color-grey-dark-1;
+  }
+}
