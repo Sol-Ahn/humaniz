@@ -88,55 +88,61 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <div class="login">
-      <div class="login__box">
-        <div class="login__box__logo">
-          <img
-            src="/resources/img/logo-big.png"
-            alt="Login logo"
-            class="login__logo__img"
-          />
-        </div>
-        <form class="login__box__input">
-          <input
-            type="text"
-            id="id"
-            placeholder="아이디"
-            class="login__box__input--id"
-          />
-          <input
-            type="password"
-            id="pw"
-            placeholder="비밀번호"
-            class="login__box__input--pw"
-          />
-          <a href="#" class="btn login__box__input--default">로그인</a>
-          <p class="find">아이디 찾기 <span>|</span> 비밀번호 찾기</p>
+    <header class="header">
+      <div class="header__box">
+        <img
+          src="/resources/img/logo-small.png"
+          alt="Humaniz logo"
+          class="header__box__logo"
+        />
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="검색" />
+          <button class="search__btn">
+            <svg class="search__icon">
+              <use xlink:href="/resources/icon/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
         </form>
-        <div class="login__box__social">
-          <a href="#" class="btn login__box__social--kakao"
-            ><span
-              ><img
-                src="/resources/img/kakao-logo.png"
-                alt=""
-                class="kakao-logo"
-            /></span>
-            카카오로 로그인</a
-          >
-          <a href="#" class="btn login__box__social--google"
-            ><span
-              ><img
-                src="/resources/img/google-logo.png"
-                alt=""
-                class="google-logo"
-            /></span>
-            구글로 로그인</a
-          >
+        <div class="user-nav">
+          <a href="#" class="user-nav__link">Login</a>
+          <ul class="user-nav__sub">
+            <li class="user-nav__sub__item">
+              <a href="#" class="user-nav__link">MyPage</a>
+            </li>
+            <li class="user-nav__sub__item">
+              <a href="#" class="user-nav__link">Logout</a>
+            </li>
+          </ul>
         </div>
-        <p class="signup">
-          아직 회원이 아니신가요? <span><a href="#">회원가입</a></span>
-        </p>
+        <div class="menu-nav">
+          <button class="btn__menu">
+            <svg class="btn__menu--icon">
+              <use xlink:href="/resources/icon/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <ul class="menu-nav__sub">
+            <li class="menu-nav__sub__item">
+              <a href="#" class="menu-nav__sub__link">전체</a>
+            </li>
+            <li class="menu-nav__sub__item">
+              <a href="#" class="menu-nav__sub__link">주제별</a>
+            </li>
+            <li class="menu-nav__sub__item">
+              <a href="#" class="menu-nav__sub__link">연령별</a>
+            </li>
+            <li class="menu-nav__sub__item">
+              <a href="#" class="menu-nav__sub__link">테마별</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </header>
+    <div class="signup">
+      <h2 class="heading-2">회원가입</h2>
+      <form action="" method="post" class="form">
+        <label for="id"></label>
+        <input type="text" id="id" name="id" class="id" />
+      </form>
     </div>
   </body>
 </html>
