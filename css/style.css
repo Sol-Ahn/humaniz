@@ -85,6 +85,17 @@ body {
   .btn__about span {
     margin-left: 1rem; }
 
+.btn__menu {
+  width: 7.8rem;
+  height: 7rem;
+  border: none;
+  background: none;
+  cursor: pointer; }
+  .btn__menu--icon {
+    width: 100%;
+    height: 100%;
+    fill: #2196f3; }
+
 .btn-icon {
   fill: #c4c4c4; }
 
@@ -212,37 +223,54 @@ body {
     margin-right: auto; }
   .header__box .user-nav {
     width: 18rem;
-    height: 5rem;
-    position: relative;
-    font-weight: 500;
-    text-align: center; }
-    .header__box .user-nav__menu {
-      list-style: none; }
-    .header__box .user-nav__item {
-      width: 18rem;
-      height: 5rem;
+    text-align: center;
+    position: relative; }
+    .header__box .user-nav__sub {
+      width: 100%;
+      list-style: none;
       position: absolute;
-      visibility: hidden; }
+      top: 130%; }
+      .header__box .user-nav__sub__item {
+        background-color: #e5e5e5;
+        height: 5rem; }
+      .header__box .user-nav__sub__item:not(:last-child) {
+        border-bottom: 5px solid #fff; }
     .header__box .user-nav__link:link, .header__box .user-nav__link:visited {
+      padding: 0.5rem;
       font-size: 2.6rem;
+      font-weight: 500;
       color: #000;
       text-transform: uppercase;
       text-decoration: none;
       letter-spacing: 3px;
-      display: inline-block;
+      display: inline-block; }
+  .header__box .menu-nav {
+    position: relative; }
+    .header__box .menu-nav__sub {
+      list-style: none;
+      width: 18rem;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-  .header__box__menu--btn {
-    width: 7.8rem;
-    height: 7rem;
-    border: none;
-    background: none; }
-  .header__box__menu--icon {
-    width: 100%;
-    height: 100%;
-    fill: #2196f3; }
+      right: 15%; }
+      .header__box .menu-nav__sub__item {
+        background-color: #2196f3; }
+      .header__box .menu-nav__sub__item:not(:last-child) {
+        border-bottom: 2px solid #fff; }
+      .header__box .menu-nav__sub__link:link, .header__box .menu-nav__sub__link:visited {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        text-decoration: none;
+        color: #fff;
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+        font-weight: 500;
+        display: inline-block;
+        background-image: linear-gradient(115deg, transparent 0%, transparent 50%, #fff 50%);
+        background-size: 250%;
+        transition: all 0.4s; }
+      .header__box .menu-nav__sub__link:hover, .header__box .menu-nav__sub__link:active {
+        background-position: 100%;
+        color: #2196f3; }
 
 .hero {
   display: flex;
