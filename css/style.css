@@ -358,3 +358,67 @@ body {
 
 .footer {
   height: 25rem; }
+
+.login {
+  display: grid;
+  grid-template-rows: 20vh repeat(2, min-content);
+  justify-content: center;
+  align-content: center;
+  grid-row-gap: 2.5rem;
+  padding: 0 2rem; }
+  .login__logo {
+    justify-self: center;
+    align-self: center; }
+  .login__input {
+    display: grid;
+    grid-row-gap: 0.6rem; }
+    .login__input--id, .login__input--pw {
+      width: 58.8rem;
+      outline: none;
+      border: 1px solid #c4c4c4;
+      border-radius: 3px;
+      background-color: #f6f6f6;
+      font-size: 2.2rem;
+      font-family: inherit;
+      padding: 1.5rem; }
+      .login__input--id::placeholder, .login__input--pw::placeholder {
+        color: #959595; }
+    .login__input--default {
+      text-align: center;
+      margin-top: 5.6rem;
+      margin-bottom: 1.5rem; }
+    .login__input .find {
+      font-size: 1.6rem; }
+  .login__social::before {
+    content: "";
+    height: 2px;
+    display: block;
+    background-color: #959595; }
+  .login__social {
+    display: grid;
+    grid-row-gap: 1.5rem; }
+    .login__social--kakao, .login__social--google {
+      width: 58.8rem;
+      height: 7rem;
+      text-align: center;
+      position: relative;
+      display: flex;
+      align-items: center; }
+      .login__social--kakao span, .login__social--google span {
+        position: absolute;
+        left: 2.4rem; }
+    .login__social--kakao {
+      background-color: #ffe812 !important;
+      color: #000 !important; }
+    .login__social--google {
+      background-color: #db4437 !important; }
+  .login .signup {
+    font-size: 2.2rem;
+    text-align: center;
+    align-self: center; }
+    .login .signup span {
+      margin-left: 1.6rem; }
+      .login .signup span a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 700; }
