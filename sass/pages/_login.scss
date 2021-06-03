@@ -4,7 +4,7 @@
   &__box {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-rows: 20vh repeat(2, min-content);
+    grid-template-rows: 30vh repeat(2, min-content);
     justify-content: center;
     align-content: center;
     grid-row-gap: 2rem;
@@ -83,8 +83,6 @@
 
     .signup {
       font-size: $font-medium-2;
-      text-align: center;
-      align-self: center;
       span {
         margin-left: 1.6rem;
         a {
