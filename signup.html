@@ -9,9 +9,13 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="/resources/slick/slick.css" />
     <link rel="stylesheet" href="/resources/slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Humaniz</title>
     <link
       rel="apple-touch-icon"
@@ -141,40 +145,77 @@
       <h2 class="heading-2">회원가입</h2>
       <form action="" method="post" class="form">
         <div class="id">
-          <label for="id">아이디</label>
-          <input type="text" id="id" name="id" class="id" />
+          <label for="id" class="form__label">아이디</label>
+          <input
+            type="text"
+            id="id"
+            name="id"
+            placeholder="아이디를 입력해주세요."
+            class="form__input"
+          />
         </div>
         <div class="pw">
-          <label for="pw">비밀번호</label>
-          <input type="password" id="pw" name="pw" class="pw" />
+          <label for="pw" class="form__label">비밀번호</label>
+          <input
+            type="password"
+            id="pw"
+            name="pw"
+            placeholder="비밀번호를 입력해주세요."
+            class="form__input"
+          />
         </div>
         <div class="pw-check">
-          <label for="pw-check">비밀번호 확인</label>
+          <label for="pw-check" class="form__label">비밀번호 확인</label>
           <input
             type="password"
             id="pw-check"
             name="pw-check"
-            class="pw-check"
+            placeholder="비밀번호를 한 번 더 입력해주세요."
+            class="form__input"
           />
         </div>
         <div class="name">
-          <label for="name">이름</label>
-          <input type="text" id="name" name="name" class="name" />
+          <label for="name" class="form__label">이름</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="이름을 입력해주세요."
+            class="form__input"
+          />
         </div>
         <div class="email">
-          <label for="email">이메일</label>
-          <input type="email" id="email" name="email" class="email" />
+          <label for="email" class="form__label">이메일</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="이메일을 입력해주세요."
+            class="form__input"
+          />
         </div>
         <div class="phone">
-          <label for="phone">전화번호</label>
-          <input type="text" id="phone" name="phone" class="phone" />
+          <label for="phone" class="form__label">전화번호</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="전화번호를 입력해주세요."
+            class="form__input"
+          />
         </div>
         <div class="birth">
-          <label for="birth">생년월일</label>
-          <input type="text" id="birth" name="birth" class="birth" />
+          <label for="birth" class="form__label">생년월일</label>
+          <input
+            type="text"
+            id="birth"
+            name="birth"
+            placeholder="생년월일을 입력해주세요."
+            class="form__input"
+          />
         </div>
         <div class="interest">
-          <label for="interest"
+          <label for="interest" class="form__label"
             >관심사<span>(3개 이상 선택해주세요)</span></label
           >
           <div class="interest__box">
@@ -202,9 +243,172 @@
           </div>
         </div>
         <div class="agreement">
-          <label for="">약관동의</label>
+          <label for="agreement" class="form__label">약관동의</label>
+          <div class="agreement__box">
+            <div class="agreement__box__checkbox">
+              <input type="checkbox" id="agree-all" name="agree" class="all" />
+              전체 동의
+            </div>
+            <div class="agreement__box__checkbox">
+              <input
+                type="checkbox"
+                id="agree-1"
+                name="agree"
+                class="require"
+              />
+              <span>(필수)</span>
+              이용약관 동의
+              <p class="paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+                asperiores ipsa dolores officiis doloribus labore nesciunt nobis
+                debitis numquam corporis voluptatibus molestias, minima expedita
+                eius. Nisi alias ratione ullam minus. Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit. Optio asperiores ipsa dolores
+                officiis doloribus labore nesciunt nobis debitis numquam
+                corporis voluptatibus molestias, minima expedita eius. Nisi
+                alias ratione ullam minus.
+              </p>
+            </div>
+            <div class="agreement__box__checkbox">
+              <input
+                type="checkbox"
+                id="agree-2"
+                name="agree"
+                class="require"
+              />
+              <span>(필수)</span> 개인정보 수집∙이용 동의
+              <p class="paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+                asperiores ipsa dolores officiis doloribus labore nesciunt nobis
+                debitis numquam corporis voluptatibus molestias, minima expedita
+                eius. Nisi alias ratione ullam minus. Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit. Optio asperiores ipsa dolores
+                officiis doloribus labore nesciunt nobis debitis numquam
+                corporis voluptatibus molestias, minima expedita eius. Nisi
+                alias ratione ullam minus.
+              </p>
+            </div>
+            <div class="agreement__box__checkbox">
+              <input
+                type="checkbox"
+                id="agree-3"
+                name="agree"
+                class="require"
+              />
+              <span>(필수)</span> 개인정보 처리 위탁 동의
+              <p class="paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+                asperiores ipsa dolores officiis doloribus labore nesciunt nobis
+                debitis numquam corporis voluptatibus molestias, minima expedita
+                eius. Nisi alias ratione ullam minus. Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit. Optio asperiores ipsa dolores
+                officiis doloribus labore nesciunt nobis debitis numquam
+                corporis voluptatibus molestias, minima expedita eius. Nisi
+                alias ratione ullam minus.
+              </p>
+            </div>
+            <div class="agreement__box__checkbox">
+              <input
+                type="checkbox"
+                id="agree-4"
+                name="agree"
+                class="require"
+              />
+              <span>(필수)</span> 개인정보 제공 동의
+              <p class="paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+                asperiores ipsa dolores officiis doloribus labore nesciunt nobis
+                debitis numquam corporis voluptatibus molestias, minima expedita
+                eius. Nisi alias ratione ullam minus. Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit. Optio asperiores ipsa dolores
+                officiis doloribus labore nesciunt nobis debitis numquam
+                corporis voluptatibus molestias, minima expedita eius. Nisi
+                alias ratione ullam minus.
+              </p>
+            </div>
+            <div class="agreement__box__checkbox">
+              <input type="checkbox" id="agree-5" name="agree" class="option" />
+              <span>(선택)</span> SMS 마케팅 수신 동의
+            </div>
+            <div class="agreement__box__checkbox">
+              <input type="checkbox" id="agree-6" name="agree" class="option" />
+              <span>(선택)</span> 이메일 마케팅 수신 동의
+            </div>
+          </div>
         </div>
+        <button class="btn-signup">회원가입</button>
       </form>
     </div>
+    <footer class="footer">
+      <div class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">회사소개</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">채용정보</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">개인정보처리방침</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">이용약관</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">공지사항</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">고객센터</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">도움말</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div class="footer__box">
+        <div class="footer__box--logo">
+          <img
+            src="/resources/img/logo-footer.png"
+            alt="Footer logo"
+            class="footer__logo"
+          />
+          <span>(주)휴머니즈</span>
+        </div>
+        <div class="footer__box--sns">
+          <svg class="footer__sns__icon">
+            <use xlink:href="/resources/icon/sprite.svg#icon-facebook"></use>
+          </svg>
+          <svg class="footer__sns__icon">
+            <use xlink:href="/resources/icon/sprite.svg#icon-twitter"></use>
+          </svg>
+          <svg class="footer__sns__icon">
+            <use xlink:href="/resources/icon/sprite.svg#icon-instagram"></use>
+          </svg>
+          <svg class="footer__sns__icon">
+            <use xlink:href="/resources/icon/sprite.svg#icon-youtube"></use>
+          </svg>
+        </div>
+      </div>
+      <p class="footer__text">
+        대표자: 안솔 | 사업자번호: 000-00-00000 | 통신판매업: 2021-00000-0000
+        <br />
+        주소: 서울특별시 아무개구 아무개로 000 아무개건물 000-0호 | 대표번호:
+        02-000-0000 | 이메일: info@humaniz.com
+      </p>
+      <p class="footer__copyright">
+        Copyright &copy; Humaniz. All rights reserved.
+      </p>
+    </footer>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="/resources/slick/slick.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
