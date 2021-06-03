@@ -99,6 +99,35 @@ body {
 .btn-icon {
   fill: #c4c4c4; }
 
+.btn-interest {
+  width: 18rem;
+  font-size: 1.6rem;
+  color: #959595;
+  background-color: #e5e5e5;
+  border: none;
+  border-radius: 5rem;
+  padding: 1.3rem;
+  cursor: pointer; }
+  .btn-interest--choice {
+    background-color: #2196f3;
+    color: #fff; }
+
+.btn-signup {
+  width: 58.8rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  background-color: #0069c0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+  backface-visibility: hidden;
+  cursor: pointer;
+  transition: all 0.2s; }
+  .btn-signup:hover {
+    transform: scale(1.1); }
+
 .contents-box {
   width: 28.2rem; }
   .contents-box__thumbnail {
@@ -426,3 +455,66 @@ body {
           text-decoration: none;
           color: #000;
           font-weight: 700; }
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .signup .form {
+    display: grid;
+    grid-row-gap: 1.5rem; }
+    .signup .form__label {
+      font-size: 2.2rem;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 0.5rem; }
+    .signup .form__input {
+      width: 58.8rem;
+      outline: none;
+      border: 1px solid #c4c4c4;
+      border-radius: 3px;
+      background-color: #f6f6f6;
+      font-size: 2.2rem;
+      font-family: inherit;
+      padding: 1.5rem; }
+      .signup .form__input::placeholder {
+        color: #959595; }
+    .signup .form .interest .form__label {
+      margin-top: 4.8rem; }
+    .signup .form .interest__box {
+      display: grid;
+      grid-template: repeat(5, min-content)/repeat(3, min-content);
+      grid-gap: 2.4rem;
+      margin-top: 1.6rem; }
+    .signup .form .agreement .form__label {
+      margin-top: 4.8rem; }
+    .signup .form .agreement .form__label::after {
+      content: "";
+      width: 58.8rem;
+      height: 1.3px;
+      display: block;
+      background-color: #c4c4c4;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem; }
+    .signup .form .agreement .all,
+    .signup .form .agreement .require,
+    .signup .form .agreement .option {
+      transform: scale(1.5);
+      margin-right: 0.5rem; }
+    .signup .form .agreement__box {
+      display: grid;
+      grid-row-gap: 1.4rem;
+      font-size: 1.6rem; }
+      .signup .form .agreement__box__checkbox {
+        width: 58.8rem;
+        border: 1px solid #c4c4c4;
+        border-radius: 3px;
+        padding: 1.2rem; }
+    .signup .form .agreement .require + span {
+      color: red; }
+    .signup .form .agreement .paragraph {
+      font-size: 1.2rem;
+      color: #959595;
+      padding: 1.5rem; }
+    .signup .form .btn-signup {
+      margin: 9rem 0; }

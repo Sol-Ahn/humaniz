@@ -50,11 +50,27 @@ $(function () {
     });
   });
 
-  $(".menu-nav, html").on("click", function () {
+  $(".menu-nav__sub, html").on("click", function () {
     if (!flag) return;
     $(".menu-nav__sub").slideUp(500, function () {
       flag = !flag;
     });
+  });
+
+  // agreement accordion
+
+  $(".paragraph").not(".paragraph.active").hide();
+  $(".agreement__box__checkbox").on("click", function () {
+    $(this).addClass("select");
+    $(".agreement__box__checkbox").not(this).removeClass("select");
+    $(".paragraph").removeClass("active");
+    $($(this)).children(".paragraph").addClass("active");
+    $(".paragraph")
+      .not(".paragraph.active")
+      .stop()
+      .slideUp(500, function () {
+        $(".paragraph.active").stop().slideDown(500);
+      });
   });
 
   // $("body").waypoint(
