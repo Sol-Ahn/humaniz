@@ -1,0 +1,48 @@
+.main__event {
+  .section-hero {
+    background-color: $color-orange;
+    &__box {
+      display: flex;
+      &__description {
+        &--name {
+        }
+
+        &--title {
+        }
+
+        &--duration {
+        }
+
+        &--text {
+        }
+
+        &--notice {
+        }
+      }
+    }
+  }
+
+  .section-content {
+    .event-code {
+      &__title {
+      }
+
+      &__input {
+      }
+    }
+
+    .event-container {
+      .event-step {
+        &__box {
+          &--title {
+          }
+          &--description {
+          }
+
+          &--notice {
+          }
+        }
+      }
+    }
+  }
+}
