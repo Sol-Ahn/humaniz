@@ -35,27 +35,14 @@ $(function () {
   });
 
   // menu-nav
-  $(".menu-nav__sub").hide();
-  $(".menu-nav").on("mouseenter", function () {
-    if (flag) return;
-    $(".menu-nav__sub").slideDown(500, function () {
-      flag = !flag;
-    });
+  $(".menu-nav__sub").hide(300);
+  $(".menu-nav").on("click", function () {
+    $(".menu-nav__sub").toggle(300);
   });
 
-  $(".menu-nav").on("mouseleave", function () {
-    if (!flag) return;
-    $(".menu-nav__sub").slideUp(500, function () {
-      flag = !flag;
-    });
-  });
-
-  $(".menu-nav__sub, html").on("click", function () {
-    if (!flag) return;
-    $(".menu-nav__sub").slideUp(500, function () {
-      flag = !flag;
-    });
-  });
+  // $(".menu-nav, html").on("click", function () {
+  //   $(".menu-nav__sub").hide(0);
+  // });
 
   // agreement accordion
 
