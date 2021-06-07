@@ -115,7 +115,7 @@ body {
     background-color: #2196f3;
     color: #fff; }
 
-.btn-signup {
+.btn-submit {
   width: 58.8rem;
   font-size: 2.2rem;
   font-weight: 700;
@@ -128,7 +128,7 @@ body {
   backface-visibility: hidden;
   cursor: pointer;
   transition: all 0.2s; }
-  .btn-signup:hover {
+  .btn-submit:hover {
     transform: scale(1.1); }
 
 .contents-box {
@@ -592,6 +592,98 @@ body {
       padding: 4rem 9rem; }
 
 .main__event .section-hero {
-  background-color: #ec652b; }
+  background-color: #ec652b;
+  padding: 2.5rem 0; }
   .main__event .section-hero__box {
-    display: flex; }
+    width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    .main__event .section-hero__box__description {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .main__event .section-hero__box__description--name {
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-bottom: 1.7rem; }
+      .main__event .section-hero__box__description--duration {
+        margin-bottom: 5rem; }
+        .main__event .section-hero__box__description--duration span {
+          background-color: #000;
+          color: #fff;
+          font-size: 1.2rem;
+          font-weight: 700;
+          letter-spacing: 2px;
+          border: none;
+          border-radius: 1rem;
+          padding: 0.6rem; }
+      .main__event .section-hero__box__description--text {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        line-height: 1.8;
+        margin-bottom: 8.8rem; }
+      .main__event .section-hero__box__description--notice {
+        font-size: 1.2rem; }
+
+.main__event .section-content .event-code {
+  display: grid;
+  grid-template: repeat(2, 1fr) min-content/max-content;
+  grid-row-gap: 2rem;
+  padding: 3.6rem;
+  box-shadow: 0 0.2rem 1.7rem #e5e5e5;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 5rem; }
+  .main__event .section-content .event-code__title {
+    color: #ec652b;
+    font-size: 2.2rem;
+    justify-self: center; }
+  .main__event .section-content .event-code__input {
+    width: 24.4rem;
+    outline: none;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    font-size: 1.6rem;
+    font-family: inherit;
+    padding: 1.5rem;
+    display: inline-block; }
+  .main__event .section-content .event-code__btn {
+    width: 24.4rem;
+    font-size: 1.6rem;
+    background-color: #ec652b;
+    border-radius: 3rem; }
+
+.main__event .section-content .event-container {
+  margin-bottom: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main__event .section-content .event-container__title {
+    font-size: 2.6rem;
+    color: #c4c4c4;
+    margin-bottom: 4rem; }
+  .main__event .section-content .event-container .event-step:not(:last-child) {
+    margin-bottom: 3rem; }
+  .main__event .section-content .event-container .event-step__caption {
+    color: #ec652b;
+    font-size: 1.6rem;
+    text-align: center; }
+  .main__event .section-content .event-container .event-step__box {
+    width: 53.9rem;
+    border: 2px solid #ec652b;
+    border-radius: 1rem;
+    padding: 2.5rem;
+    display: inline-block; }
+    .main__event .section-content .event-container .event-step__box--title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1.3rem; }
+    .main__event .section-content .event-container .event-step__box--description {
+      font-size: 1.6rem; }
+    .main__event .section-content .event-container .event-step__box--notice {
+      color: #959595;
+      font-size: 1.2rem;
+      margin-top: 1.3rem; }
