@@ -83,3 +83,33 @@
     transform: scale(1.1);
   }
 }
+
+.btn-logout {
+  font-size: $font-small-1;
+  letter-spacing: 2px;
+  background-color: $color-grey-light-0;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem;
+  backface-visibility: hidden;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-grey-light-2;
+    color: #fff;
+  }
+}
+
+.btn-withdrawal,
+.btn-service {
+  &:link,
+  &:visited {
+    color: #000;
+    font-size: $font-small-1;
+  }
+
+  &:hover,
+  &:active {
+    color: #fff;
+  }
+}

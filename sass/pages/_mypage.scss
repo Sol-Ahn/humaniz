@@ -1,0 +1,200 @@
+.main__mypage {
+  .section-user {
+    margin-top: 11.3rem;
+    &__user-info {
+      width: 120rem;
+      margin: 0 auto;
+      background-color: rgba($color-blue-light-1, 0.3);
+      padding: 2.5rem;
+      display: grid;
+      grid-template: repeat(2, min-content) / repeat(4, max-content);
+      grid-row-gap: 1.5rem;
+      grid-column-gap: 3rem;
+      justify-content: center;
+
+      &__profile {
+        width: 8rem;
+        height: 8rem;
+        background-color: #fff;
+        display: inline-block;
+        border: none;
+        border-radius: 50%;
+        position: relative;
+        padding: 0.7rem;
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;
+
+        &--icon {
+          width: 100%;
+          height: 100%;
+          fill: $color-grey-dark-1;
+        }
+      }
+
+      &__welcome {
+        &--name {
+          margin-bottom: 0.5rem;
+        }
+
+        &--text {
+          font-size: $font-medium-2;
+          font-weight: 500;
+        }
+      }
+
+      &__btn {
+        &--logout {
+          grid-row: 1 / 2;
+          grid-column: 4 / 5;
+          align-self: center;
+        }
+
+        &--withdrawal {
+          grid-row: 2 / 3;
+          grid-column: 3 / 4;
+        }
+
+        &--service {
+          grid-row: 2 / 3;
+          grid-column: 4 / 5;
+          justify-self: start;
+        }
+      }
+    }
+    &__user-nav {
+      margin: 3rem;
+
+      &__list {
+        list-style: none;
+
+        display: flex;
+        justify-content: center;
+      }
+
+      &__item:link,
+      &__item:visited {
+        color: #000;
+        font-size: $font-medium-2;
+        font-weight: 500;
+        text-decoration: none;
+        letter-spacing: 3px;
+      }
+
+      &__item:hover,
+      &__item:active {
+        font-weight: 700;
+        padding-bottom: 0.8rem;
+        border-bottom: 4px solid $color-blue-light-2;
+      }
+
+      &__item--line {
+        font-size: $font-medium-2;
+        font-weight: 900;
+        margin: 0 2rem;
+      }
+    }
+  }
+
+  .section-content {
+    padding-bottom: 9rem;
+
+    .article__edit-info {
+      display: grid;
+      grid-template-columns: max-content;
+      justify-content: center;
+
+      &__title {
+        margin: 4.8rem 0;
+      }
+
+      .form__edit {
+        display: grid;
+        grid-row-gap: 1.5rem;
+
+        &__label {
+          font-size: $font-medium-2;
+          font-weight: 500;
+          display: block;
+          margin-bottom: 0.5rem;
+        }
+
+        &__input {
+          width: 58.8rem;
+          outline: none;
+          border: 1px solid $color-grey-light-2;
+          border-radius: 3px;
+          background-color: $color-grey-light-0;
+          font-size: $font-medium-2;
+          font-family: inherit;
+          padding: 1.5rem;
+
+          &::placeholder {
+            color: $color-grey-dark-1;
+          }
+        }
+
+        .interest {
+          .form__edit__label {
+            margin-top: 4.8rem;
+          }
+
+          &__box {
+            display: grid;
+            grid-template: repeat(5, min-content) / repeat(3, min-content);
+            grid-gap: 2.4rem;
+            margin-top: 1.6rem;
+          }
+        }
+
+        &__btn {
+          margin: 9rem 0;
+        }
+      }
+    }
+
+    .article__my-subscribe {
+      display: grid;
+      grid-template-columns: max-content;
+      justify-content: center;
+
+      &__title {
+        margin: 4.8rem 0;
+      }
+
+      &__card {
+        margin: 1.6rem 0;
+      }
+
+      &__date {
+        width: 58.8rem;
+        font-size: $font-default;
+        display: flex;
+        justify-content: space-around;
+
+        &--start,
+        &--end {
+          strong {
+            margin-right: 2rem;
+          }
+        }
+      }
+
+      &__btn {
+        width: 58.8rem;
+        margin: 9rem 0;
+        text-align: center;
+      }
+    }
+
+    .article__my-contents {
+      display: grid;
+      grid-template-columns: max-content;
+      justify-content: center;
+
+      &__title {
+        margin-top: 4.8rem;
+        margin-bottom: 1.6rem;
+      }
+    }
+  }
+}
