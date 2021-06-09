@@ -376,6 +376,42 @@ body {
     grid-row: 5 / 6;
     grid-column: 2 / -1; }
 
+.coupon__box {
+  width: 51rem;
+  height: 16.3rem;
+  padding: 1rem;
+  background-image: url(/resources/img/coupon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template: repeat(4, 1fr)/max-content min-content;
+  justify-content: space-around;
+  align-items: center; }
+  .coupon__box__name {
+    font-size: 1.6rem;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2; }
+  .coupon__box__title {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2; }
+  .coupon__box__duration {
+    font-size: 1.4rem;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2; }
+  .coupon__box__notice {
+    font-size: 1.2rem;
+    grid-row: 4 / 5;
+    grid-column: 1 / 2; }
+  .coupon__box__use:link, .coupon__box__use:visited {
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    grid-row: 2 / span 2;
+    grid-column: 2 / -1; }
+  .coupon__box__use:hover, .coupon__box__use:active {
+    color: #c4c4c4; }
+
 .header__box {
   width: 120rem;
   margin: 0 auto;
@@ -973,10 +1009,14 @@ body {
       width: 58.8rem;
       margin: 9rem 0;
       text-align: center; }
-  .main__mypage .section-content .article__my-contents {
+  .main__mypage .section-content .article__my-contents,
+  .main__mypage .section-content .article__coupon {
     display: grid;
     grid-template-columns: max-content;
     justify-content: center; }
-    .main__mypage .section-content .article__my-contents__title {
+    .main__mypage .section-content .article__my-contents__title,
+    .main__mypage .section-content .article__coupon__title {
       margin-top: 4.8rem;
       margin-bottom: 1.6rem; }
+  .main__mypage .section-content .article__coupon__title {
+    margin-bottom: 3.2rem; }

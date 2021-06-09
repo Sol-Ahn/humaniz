@@ -186,7 +186,8 @@
       }
     }
 
-    .article__my-contents {
+    .article__my-contents,
+    .article__coupon {
       display: grid;
       grid-template-columns: max-content;
       justify-content: center;
@@ -194,6 +195,12 @@
       &__title {
         margin-top: 4.8rem;
         margin-bottom: 1.6rem;
+      }
+    }
+
+    .article__coupon {
+      &__title {
+        margin-bottom: 3.2rem;
       }
     }
   }
