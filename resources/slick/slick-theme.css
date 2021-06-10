@@ -74,7 +74,7 @@
 .slick-prev:before {
   background-image: url("/resources/icon/SVG/chevron-left.svg");
   background-size: 50px 50px;
-  display: inline-block;
+  display: block;
   width: 50px;
   height: 50px;
   content: "";
@@ -82,7 +82,7 @@
 [dir="rtl"] .slick-prev:before {
   background-image: url("/resources/icon/SVG/chevron-right.svg");
   background-size: 50px 50px;
-  display: inline-block;
+  display: block;
   width: 50px;
   height: 50px;
   content: "";
