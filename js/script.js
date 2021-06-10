@@ -1,12 +1,19 @@
 $(function () {
-  // slick slider
-  $(".slider").slick({
+  // main slider
+  $(".main-slider .slider").slick({
     dots: true,
     infinite: true,
     speed: 300,
     fade: true,
     cssEase: "linear",
     autoplay: true,
+  });
+
+  // recommend slider
+  $(".recommend-slider .slider").slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
   });
 
   // home dropdown menu

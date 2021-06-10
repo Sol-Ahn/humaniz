@@ -296,30 +296,55 @@ body {
     display: inline-block;
     margin: 5rem 40rem 2.6rem 10rem; }
 
-.slider {
+.main-slider .slider {
   width: 120rem;
   margin: 0 auto; }
-  .slider .slide {
+  .main-slider .slider .slide {
     width: 100%;
     padding: 2rem;
     display: flex;
     justify-content: center; }
-    .slider .slide__description {
+    .main-slider .slider .slide__description {
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin-left: 4.4rem; }
-      .slider .slide__description__name {
+      .main-slider .slider .slide__description__name {
         font-size: 2.6rem;
         font-weight: 500; }
-      .slider .slide__description__title {
+      .main-slider .slider .slide__description__title {
         margin: 2.5rem 0; }
-      .slider .slide__description__hashtags--list {
+      .main-slider .slider .slide__description__hashtags--list {
         list-style: none;
         display: flex; }
-      .slider .slide__description__hashtags--item {
+      .main-slider .slider .slide__description__hashtags--item {
         font-size: 1.6rem;
         flex: 0 0 15%; }
+
+.recommend-slider .slider {
+  width: 120rem;
+  margin: 0 auto; }
+
+.recommend-slider .slide {
+  width: 100%;
+  display: flex; }
+  .recommend-slider .slide__img {
+    width: 26rem;
+    height: 100%; }
+  .recommend-slider .slide__description {
+    padding-left: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .recommend-slider .slide__description__title {
+      overflow-wrap: break-word;
+      margin-bottom: 1rem; }
+    .recommend-slider .slide__description__hashtags--list {
+      list-style: none;
+      display: flex; }
+    .recommend-slider .slide__description__hashtags--item {
+      font-size: 1.6rem;
+      flex: 0 0 30%; }
 
 .card {
   width: 58.8rem;
@@ -1168,3 +1193,75 @@ body {
       background-color: #c4c4c4;
       display: block;
       margin: 1rem 0 4.8rem 0; }
+
+.main__detail .section-hero {
+  background-color: rgba(110, 198, 255, 0.4);
+  min-height: 30rem;
+  padding: 2rem 0; }
+  .main__detail .section-hero__box {
+    width: 120rem;
+    margin: 0 auto; }
+    .main__detail .section-hero__box__title {
+      margin-top: 2.4rem; }
+    .main__detail .section-hero__box__hashtags {
+      list-style: none;
+      display: flex; }
+      .main__detail .section-hero__box__hashtags--item {
+        font-size: 2.2rem;
+        flex: 0 0 10%; }
+    .main__detail .section-hero__box__description {
+      margin-top: 5.2rem;
+      letter-spacing: 3px;
+      display: flex; }
+      .main__detail .section-hero__box__description--duration {
+        font-size: 2.2rem;
+        flex: 0 0 20%; }
+      .main__detail .section-hero__box__description--editor {
+        font-size: 2.2rem;
+        margin-right: auto; }
+        .main__detail .section-hero__box__description--editor svg {
+          width: 2.4rem;
+          height: 2.4rem;
+          transform: rotate(270deg);
+          fill: #0069c0; }
+      .main__detail .section-hero__box__description--features {
+        width: 25rem;
+        display: flex;
+        justify-content: space-between; }
+        .main__detail .section-hero__box__description--features--like, .main__detail .section-hero__box__description--features--bookmark, .main__detail .section-hero__box__description--features--view {
+          font-size: 1.6rem;
+          flex: 0 0 15%;
+          display: flex; }
+          .main__detail .section-hero__box__description--features--like svg, .main__detail .section-hero__box__description--features--bookmark svg, .main__detail .section-hero__box__description--features--view svg {
+            width: 2.4rem;
+            height: 2.4rem;
+            fill: #0069c0;
+            margin-right: 0.5rem; }
+
+.main__detail .section-content__container {
+  width: 120rem;
+  margin: 0 auto; }
+  .main__detail .section-content__container__thumbnail {
+    margin: 6.4rem 0; }
+  .main__detail .section-content__container .article__contents-detail__title {
+    margin-bottom: 5rem; }
+  .main__detail .section-content__container .article__contents-detail__paragraph {
+    font-size: 2.2rem;
+    margin-bottom: 4rem; }
+  .main__detail .section-content__container .article__contents-detail__img {
+    margin: 7rem 0;
+    text-align: center; }
+    .main__detail .section-content__container .article__contents-detail__img figcaption {
+      margin-top: 0.3rem;
+      font-size: 2.6rem; }
+  .main__detail .section-content__container .article__contents-detail__recommend {
+    width: 120rem;
+    min-height: 40rem; }
+    .main__detail .section-content__container .article__contents-detail__recommend--title {
+      margin-bottom: 4.8rem; }
+    .main__detail .section-content__container .article__contents-detail__recommend--title::before {
+      content: "";
+      height: 3px;
+      background-color: #c4c4c4;
+      display: block;
+      margin: 4.8rem 0; }
