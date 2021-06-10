@@ -1,6 +1,12 @@
 .main__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template: 0 / repeat(3, 1fr);
+
+  .floating-bar {
+    grid-column: 3 / -1;
+    justify-self: center;
+    margin-top: 10rem;
+  }
 
   &__container {
     width: 120rem;
