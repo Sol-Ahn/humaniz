@@ -1,0 +1,3045 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/resources/slick/slick.css" />
+    <link rel="stylesheet" href="/resources/slick/slick-theme.css" />
+    <title>Humaniz</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="resources/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="resources/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="resources/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="resources/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="resources/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="resources/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="resources/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="resources/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="resources/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="resources/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="resources/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="resources/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="resources/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="resources/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__box">
+        <img
+          src="/resources/img/logo-small.png"
+          alt="Humaniz logo"
+          class="header__box__logo"
+        />
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="검색" />
+          <button class="search__btn">
+            <svg class="search__icon">
+              <use xlink:href="/resources/icon/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+        <nav class="user-nav">
+          <a href="#" class="user-nav__link">Login</a>
+          <ul class="user-nav__sub">
+            <li class="user-nav__sub__item">
+              <a href="#" class="user-nav__link">MyPage</a>
+            </li>
+            <li class="user-nav__sub__item">
+              <a href="#" class="user-nav__link">Logout</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="menu-nav">
+          <button class="btn__menu">
+            <svg class="btn__menu--icon">
+              <use xlink:href="/resources/icon/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <ul class="menu-nav__sub">
+            <li class="menu-nav__sub__item">
+              <a href="#" class="menu-nav__sub__link">전체</a>
+            </li>
+            <li class="menu-nav__sub__item">
+              <a href="#" class="menu-nav__sub__link">주제별</a>
+            </li>
+            <li class="menu-nav__sub__item">
+              <a href="#" class="menu-nav__sub__link">연령별</a>
+            </li>
+            <li class="menu-nav__sub__item">
+              <a href="#" class="menu-nav__sub__link">테마별</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main__list">
+      <div class="floating-bar">
+        <svg class="floating-bar__item--top">
+          <use
+            xlink:href="resources/icon/sprite.svg#icon-chevron-thin-up"
+          ></use>
+        </svg>
+        <svg class="floating-bar__item--home">
+          <use xlink:href="resources/icon/sprite.svg#icon-home"></use>
+        </svg>
+        <svg class="floating-bar__item--bottom">
+          <use
+            xlink:href="resources/icon/sprite.svg#icon-chevron-thin-down"
+          ></use>
+        </svg>
+      </div>
+      <div class="main__list__container">
+        <nav class="list-nav">
+          <div class="list-nav__main-menu">
+            <a href="#" class="list-nav__main-menu__link">전체</a>
+          </div>
+          <div class="list-nav__main-menu">
+            <a href="#" class="list-nav__main-menu__link">주제별</a>
+            <ul class="list-nav__sub-menu">
+              <li class="list-nav__sub-menu__item">
+                <a href="#" class="list-nav__sub-menu__link">동양철학</a>
+              </li>
+              <li class="list-nav__sub-menu__item">
+                <a href="#" class="list-nav__sub-menu__link">서양철학</a>
+              </li>
+              <li class="list-nav__sub-menu__item">
+                <a href="#" class="list-nav__sub-menu__link">고전</a>
+              </li>
+              <li class="list-nav__sub-menu__item">
+                <a href="#" class="list-nav__sub-menu__link">문학</a>
+              </li>
+              <li class="list-nav__sub-menu__item">
+                <a href="#" class="list-nav__sub-menu__link">교양인문학</a>
+              </li>
+            </ul>
+          </div>
+          <div class="list-nav__main-menu">
+            <a href="#" class="list-nav__main-menu__link">연령별</a>
+            <ul class="list-nav__sub-menu">
+              <li class="list-nav__sub-menu__item">
+                <a href="#" class="list-nav__sub-menu__link">10대</a>
+              </li>
+              <li class="list-nav__sub-menu__item">
+                <a href="#" class="list-nav__sub-menu__link">20대</a>
+              </li>
+              <li class="list-nav__sub-menu__item">
+                <a href="#" class="list-nav__sub-menu__link">30대</a>
+              </li>
+              <li class="list-nav__sub-menu__item">
+                <a href="#" class="list-nav__sub-menu__link">40대</a>
+              </li>
+              <li class="list-nav__sub-menu__item">
+                <a href="#" class="list-nav__sub-menu__link">50대 이상</a>
+              </li>
+            </ul>
+          </div>
+          <div class="list-nav__main-menu">
+            <a href="#" class="list-nav__main-menu__link">테마별</a>
+            <ul class="list-nav__sub-menu">
+              <li class="list-nav__sub-menu__item">
+                <a href="#" class="list-nav__sub-menu__link"
+                  >미디어 속 인문학</a
+                >
+              </li>
+              <li class="list-nav__sub-menu__item">
+                <a href="#" class="list-nav__sub-menu__link"
+                  >똑똑해지는 출근길</a
+                >
+              </li>
+              <li class="list-nav__sub-menu__item">
+                <a href="#" class="list-nav__sub-menu__link">고전 쉽게 읽기</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section class="section-all">
+          <h3 class="heading-3 section-all__title">전체</h3>
+          <div class="select__contents-order-select">
+            <select name="order-select" id="contents-order-select">
+              <option value="" disabled="disabled" selected="selected">
+                정렬필터를 선택하세요.
+              </option>
+              <option value="recent">최신순</option>
+              <option value="like">좋아요순</option>
+              <option value="bookmark">북마크순</option>
+            </select>
+          </div>
+          <div class="list-contents">
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-subject">
+          <h3 class="heading-3 section-subject__title">주제별</h3>
+          <h5 class="heading-5 section-subject__sub-title">동양철학</h5>
+          <div class="list-contents">
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+          </div>
+          <h5 class="heading-5 section-subject__sub-title">서양철학</h5>
+          <div class="list-contents">
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+          </div>
+          <h5 class="heading-5 section-subject__sub-title">고전</h5>
+          <div class="list-contents">
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+          </div>
+          <h5 class="heading-5 section-subject__sub-title">문학</h5>
+          <div class="list-contents">
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+          </div>
+          <h5 class="heading-5 section-subject__sub-title">교양인문학</h5>
+          <div class="list-contents">
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-age">
+          <h3 class="heading-3 section-age__title">연령별</h3>
+          <h5 class="heading-5 section-age__sub-title">10대</h5>
+          <div class="list-contents">
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+          </div>
+          <h5 class="heading-5 section-age__sub-title">20대</h5>
+          <div class="list-contents">
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+          </div>
+          <h5 class="heading-5 section-age__sub-title">30대</h5>
+          <div class="list-contents">
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+          </div>
+          <h5 class="heading-5 section-age__sub-title">40대</h5>
+          <div class="list-contents">
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+          </div>
+          <h5 class="heading-5 section-age__sub-title">50대 이상</h5>
+          <div class="list-contents">
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-theme">
+          <h3 class="heading-3 section-theme__title">테마별</h3>
+          <h5 class="heading-5 section-theme__sub-title">미디어 속 인문학</h5>
+          <div class="list-contents">
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+          </div>
+          <h5 class="heading-5 section-theme__sub-title">똑똑해지는 출근길</h5>
+          <div class="list-contents">
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+          </div>
+          <h5 class="heading-5 section-theme__sub-title">고전 쉽게 읽기</h5>
+          <div class="list-contents">
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+            <div class="list-contents__box">
+              <img
+                src="/resources/img/mock_img.jpg"
+                alt="Content thumbnail"
+                class="list-contents__box__thumbnail"
+              />
+              <div class="list-contents__box__description">
+                <ul class="hashtags">
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                  <li class="hashtags__item">#해시태그</li>
+                </ul>
+                <div class="btn-icon">
+                  <svg class="btn-icon__like">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-heart"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="btn-icon">
+                  <svg class="btn-icon__bookmark">
+                    <use
+                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-contents__box__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                unde! Minima, obcaecati accusamus
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">회사소개</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">채용정보</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">개인정보처리방침</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">이용약관</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">공지사항</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">고객센터</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">도움말</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div class="footer__box">
+        <div class="footer__box--logo">
+          <img
+            src="/resources/img/logo-footer.png"
+            alt="Footer logo"
+            class="footer__logo"
+          />
+          <span>(주)휴머니즈</span>
+        </div>
+        <div class="footer__box--sns">
+          <svg class="footer__sns__icon">
+            <use xlink:href="/resources/icon/sprite.svg#icon-facebook"></use>
+          </svg>
+          <svg class="footer__sns__icon">
+            <use xlink:href="/resources/icon/sprite.svg#icon-twitter"></use>
+          </svg>
+          <svg class="footer__sns__icon">
+            <use xlink:href="/resources/icon/sprite.svg#icon-instagram"></use>
+          </svg>
+          <svg class="footer__sns__icon">
+            <use xlink:href="/resources/icon/sprite.svg#icon-youtube"></use>
+          </svg>
+        </div>
+      </div>
+      <p class="footer__text">
+        대표자: 안솔 | 사업자번호: 000-00-00000 | 통신판매업: 2021-00000-0000
+        <br />
+        주소: 서울특별시 아무개구 아무개로 000 아무개건물 000-0호 | 대표번호:
+        02-000-0000 | 이메일: info@humaniz.com
+      </p>
+      <p class="footer__copyright">
+        Copyright &copy; Humaniz. All rights reserved.
+      </p>
+    </footer>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="/resources/slick/slick.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

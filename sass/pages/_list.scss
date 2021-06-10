@@ -1,0 +1,131 @@
+.main__list {
+  display: grid;
+  grid-template: 0 / repeat(3, 1fr);
+
+  .floating-bar {
+    grid-column: 3 / -1;
+    justify-self: center;
+    margin-top: 10rem;
+  }
+
+  &__container {
+    width: 120rem;
+    margin: 0 auto;
+    margin-top: 11.3rem;
+    padding-bottom: 9rem;
+    grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-column-gap: 6.6rem;
+  }
+
+  .list-nav {
+    grid-column: 1 / 2;
+  }
+
+  .select__contents-order-select {
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid $color-grey-light-2;
+    border-radius: 5px;
+    box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    transform: translate(370%, -35%);
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    }
+
+    select {
+      background-color: transparent;
+      border: none;
+      display: block;
+      width: 100%;
+      outline: none;
+      color: $color-blue-light-2;
+      font-family: inherit;
+      font-size: $font-default;
+      cursor: pointer;
+      padding: 0.5rem;
+
+      option:disabled {
+        color: $color-grey-light-2;
+      }
+    }
+  }
+
+  .section-all {
+    grid-column: 2 / -1;
+    &__title {
+      margin-bottom: 4.8rem;
+    }
+  }
+
+  .section-subject {
+    grid-column: 2 / -1;
+
+    &__title {
+      margin: 4.8rem 0;
+    }
+
+    &__sub-title {
+      font-weight: 500;
+      margin-top: 4.8rem;
+    }
+
+    &__sub-title::after {
+      content: "";
+      width: 89.4rem;
+      height: 2px;
+      background-color: $color-grey-light-2;
+      display: block;
+      margin: 1rem 0 4.8rem 0;
+    }
+  }
+
+  .section-age {
+    grid-column: 2 / -1;
+
+    &__title {
+      margin: 4.8rem 0;
+    }
+
+    &__sub-title {
+      font-weight: 500;
+      margin-top: 4.8rem;
+    }
+
+    &__sub-title::after {
+      content: "";
+      width: 89.4rem;
+      height: 2px;
+      background-color: $color-grey-light-2;
+      display: block;
+      margin: 1rem 0 4.8rem 0;
+    }
+  }
+
+  .section-theme {
+    grid-column: 2 / -1;
+
+    &__title {
+      margin: 4.8rem 0;
+    }
+
+    &__sub-title {
+      font-weight: 500;
+      margin-top: 4.8rem;
+    }
+
+    &__sub-title::after {
+      content: "";
+      width: 89.4rem;
+      height: 2px;
+      background-color: $color-grey-light-2;
+      display: block;
+      margin: 1rem 0 4.8rem 0;
+    }
+  }
+}
