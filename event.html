@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/resources/slick/slick.css" />
     <link rel="stylesheet" href="/resources/slick/slick-theme.css" />
+    <script src="/resources/lib/jquery-3.6.0.min.js"></script>
+    <script src="/resources/slick/slick.min.js"></script>
+    <script defer src="/js/script.js"></script>
     <title>Humaniz</title>
     <link
       rel="apple-touch-icon"
@@ -106,13 +109,21 @@
           </button>
         </form>
         <div class="user-nav">
-          <a href="/login.html" class="user-nav__link">Login</a>
+          <a href="/login.html" class="user-nav__link user-nav__link--login"
+            >Login</a
+          >
           <ul class="user-nav__sub">
             <li class="user-nav__sub__item">
-              <a href="/mypage.html" class="user-nav__link">MyPage</a>
+              <a
+                href="/mypage.html"
+                class="user-nav__link user-nav__link--mypage"
+                >MyPage</a
+              >
             </li>
             <li class="user-nav__sub__item">
-              <a href="/" class="user-nav__link">Logout</a>
+              <a href="/" class="user-nav__link user-nav__link--logout"
+                >Logout</a
+              >
             </li>
           </ul>
         </div>
@@ -286,15 +297,5 @@
         Copyright &copy; Humaniz. All rights reserved.
       </p>
     </footer>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script src="/resources/slick/slick.min.js"></script>
-    <script src="/js/script.js"></script>
   </body>
 </html>

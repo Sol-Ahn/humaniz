@@ -75,8 +75,8 @@ $(function () {
     window.location.href = "/about.html";
   });
 
-  $(".btn-logout").on("click", function () {
-    alert("로그아웃 하셨습니다. 다음에 또 만나요!");
+  $(".btn-logout, .user-nav__link--logout").on("click", function () {
+    alert("로그아웃 되었습니다. 다음에 또 만나요!");
     window.location.href = "/";
   });
 
