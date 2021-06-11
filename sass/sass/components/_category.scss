@@ -7,7 +7,6 @@
 
   &__box {
     margin: 0 2rem;
-    text-align: center;
     position: relative;
 
     &__img {
@@ -16,23 +15,14 @@
       filter: brightness(0.7);
     }
 
-    &__name:link,
-    &__name:visited {
+    &__name {
       font-size: $font-medium-2;
-      font-weight: 400;
-      text-decoration: none;
+      font-weight: 500;
       color: #fff;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      transition: all 0.2s;
-    }
-
-    &__name:hover,
-    &__name:active {
-      font-size: $font-medium-1;
-      font-weight: 500;
     }
   }
 }

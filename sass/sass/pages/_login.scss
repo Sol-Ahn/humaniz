@@ -1,7 +1,6 @@
 .login {
   display: grid;
   grid-template-columns: 1fr minmax(min-content, max-content) 1fr;
-
   &__box {
     grid-column: 2 / 3;
     display: grid;
@@ -63,8 +62,8 @@
         height: 7rem;
         text-align: center;
         position: relative;
-        // display: flex;
-        // align-items: center;
+        display: flex;
+        align-items: center;
 
         span {
           position: absolute;
@@ -82,9 +81,8 @@
       }
     }
 
-    &__signup {
+    .signup {
       font-size: $font-medium-2;
-      justify-self: center;
       span {
         margin-left: 1.6rem;
         a {

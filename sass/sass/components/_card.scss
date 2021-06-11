@@ -1,0 +1,83 @@
+.card {
+  width: 58.8rem;
+  height: 22.2rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 1.4rem $color-grey-light-2;
+  margin-bottom: 4.8rem;
+
+  display: grid;
+  grid-template: repeat(5, max-content) / repeat(2, max-content);
+  justify-content: space-around;
+  align-content: center;
+
+  &__label {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    text-align: left;
+    padding-top: 0.5rem;
+
+    span {
+      font-size: $font-small-2;
+      color: #fff;
+      background-color: $color-orange;
+      border: none;
+      border-radius: 3rem;
+      padding: 0.5rem 1.8rem;
+    }
+  }
+
+  &__price {
+    margin-bottom: 1.2rem;
+    grid-row: 2 / 3;
+  }
+
+  &__month {
+    font-size: $font-medium-2;
+    grid-row: 3 / 4;
+  }
+
+  &__discount {
+    width: 10.5rem;
+    height: 10.5rem;
+    background-color: $color-blue-dark-1;
+    border: none;
+    border-radius: 50%;
+    grid-row: 2 / 4;
+    grid-column: 2 / -1;
+    display: inline-block;
+    position: relative;
+    justify-self: center;
+
+    span {
+      color: #fff;
+      font-size: $font-large-2;
+      font-weight: 700;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__line {
+    background-color: $color-grey-light-1;
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+    margin: 1rem 0;
+  }
+
+  &__notice {
+    font-size: $font-default;
+    grid-row: 5 / 6;
+    align-self: center;
+  }
+
+  &__btn {
+    font-size: $font-default;
+    padding: 0.8rem 1.6rem;
+    grid-row: 5 / 6;
+    grid-column: 2 / -1;
+  }
+}

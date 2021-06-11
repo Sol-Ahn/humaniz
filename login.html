@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/resources/slick/slick.css" />
     <link rel="stylesheet" href="/resources/slick/slick-theme.css" />
     <title>Humaniz</title>
@@ -91,11 +91,13 @@
     <div class="login">
       <div class="login__box">
         <div class="login__box__logo">
-          <img
-            src="/resources/img/logo-big.png"
-            alt="Login logo"
-            class="login__logo__img"
-          />
+          <a href="/" class="login__box__logo--link">
+            <img
+              src="/resources/img/logo-big.png"
+              alt="Login logo"
+              class="login__logo__img"
+            />
+          </a>
         </div>
         <form class="login__box__input">
           <input
@@ -133,8 +135,9 @@
             구글로 로그인</a
           >
         </div>
-        <p class="signup">
-          아직 회원이 아니신가요? <span><a href="#">회원가입</a></span>
+        <p class="login__box__signup">
+          아직 회원이 아니신가요?
+          <span><a href="/signup.html">회원가입</a></span>
         </p>
       </div>
     </div>

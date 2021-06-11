@@ -1,4 +1,5 @@
 $(function () {
+  ///////////////////////////IMAGE SLIDER/////////////////////////////
   // main slider
   $(".main-slider .slider").slick({
     dots: true,
@@ -16,11 +17,13 @@ $(function () {
     slidesToScroll: 2,
   });
 
+  ///////////////////////////MENU/////////////////////////////
   // home dropdown menu
   // user-nav
   let flag = false;
   $(".user-nav__sub").hide();
-  $(".user-nav").on("mouseenter", function () {
+  $(".user-nav").on("mouseenter", function (e) {
+    e.preventDefault();
     if (flag) return;
     $(".user-nav__sub").slideDown(500, function () {
       flag = !flag;
@@ -42,17 +45,13 @@ $(function () {
   });
 
   // menu-nav
-  $(".menu-nav__sub").hide(300);
-  $(".menu-nav").on("click", function () {
+  $(".menu-nav__sub").hide();
+  $(".menu-nav").on("click", function (e) {
+    e.preventDefault();
     $(".menu-nav__sub").toggle(300);
   });
 
-  // $(".menu-nav, html").on("click", function () {
-  //   $(".menu-nav__sub").hide(0);
-  // });
-
   // agreement accordion
-
   $(".paragraph").not(".paragraph.active").hide();
   $(".agreement__box__checkbox").on("click", function () {
     $(this).addClass("select");
@@ -67,14 +66,25 @@ $(function () {
       });
   });
 
-  // $("body").waypoint(
-  //   function (direction) {
-  //     if (direction === "down") {
-  //       $(".header").addClass("sticky");
-  //     } else {
-  //       $(".header").removeClass("sticky");
-  //     }
-  //   },
-  //   { offset: "50px" }
-  // );
+  ///////////////////////////LINK/////////////////////////////
+  $(".banner__event").on("click", function () {
+    window.location.href = "/event.html";
+  });
+
+  $(".btn__about").on("click", function () {
+    window.location.href = "/about.html";
+  });
+
+  $(".btn-logout").on("click", function () {
+    alert("로그아웃 하셨습니다. 다음에 또 만나요!");
+    window.location.href = "/";
+  });
+
+  $(".btn-subscribe").on("click", function () {
+    window.location.href = "/subscribe.html";
+  });
+
+  $(".article__my-subscribe__btn").on("click", function () {
+    window.location.href = "/subscribe.html";
+  });
 });

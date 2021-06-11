@@ -252,19 +252,25 @@ body {
   align-items: center; }
   .category__box {
     margin: 0 2rem;
+    text-align: center;
     position: relative; }
     .category__box__img {
       width: 18rem;
       height: 18rem;
       filter: brightness(0.7); }
-    .category__box__name {
+    .category__box__name:link, .category__box__name:visited {
       font-size: 2.2rem;
-      font-weight: 500;
+      font-weight: 400;
+      text-decoration: none;
       color: #fff;
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      transition: all 0.2s; }
+    .category__box__name:hover, .category__box__name:active {
+      font-size: 2.6rem;
+      font-weight: 500; }
 
 .banner {
   width: 120rem;
@@ -274,7 +280,8 @@ body {
 .banner__event {
   background-image: url(/resources/img/banner-event.png);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  cursor: pointer; }
   .banner__event__description {
     display: inline-block;
     font-weight: 700;
@@ -693,9 +700,7 @@ body {
         width: 58.8rem;
         height: 7rem;
         text-align: center;
-        position: relative;
-        display: flex;
-        align-items: center; }
+        position: relative; }
         .login__box__social--kakao span, .login__box__social--google span {
           position: absolute;
           left: 2.4rem; }
@@ -704,11 +709,12 @@ body {
         color: #000 !important; }
       .login__box__social--google {
         background-color: #db4437 !important; }
-    .login__box .signup {
-      font-size: 2.2rem; }
-      .login__box .signup span {
+    .login__box__signup {
+      font-size: 2.2rem;
+      justify-self: center; }
+      .login__box__signup span {
         margin-left: 1.6rem; }
-        .login__box .signup span a {
+        .login__box__signup span a {
           text-decoration: none;
           color: #000;
           font-weight: 700; }
@@ -907,6 +913,7 @@ body {
           padding: 0.6rem; }
       .main__event .section-hero__box__description--text {
         font-size: 1.6rem;
+        font-weight: 500;
         letter-spacing: 2px;
         line-height: 1.8;
         margin-bottom: 8.8rem; }

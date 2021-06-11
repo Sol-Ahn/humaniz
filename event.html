@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/resources/slick/slick.css" />
     <link rel="stylesheet" href="/resources/slick/slick-theme.css" />
     <title>Humaniz</title>
@@ -90,11 +90,13 @@
   <body>
     <header class="header">
       <div class="header__box">
-        <img
-          src="/resources/img/logo-small.png"
-          alt="Humaniz logo"
-          class="header__box__logo"
-        />
+        <a href="/" class="header__box__logo--link">
+          <img
+            src="/resources/img/logo-small.png"
+            alt="Humaniz logo"
+            class="header__box__logo"
+          />
+        </a>
         <form action="#" class="search">
           <input type="text" class="search__input" placeholder="검색" />
           <button class="search__btn">
@@ -104,13 +106,13 @@
           </button>
         </form>
         <div class="user-nav">
-          <a href="#" class="user-nav__link">Login</a>
+          <a href="/login.html" class="user-nav__link">Login</a>
           <ul class="user-nav__sub">
             <li class="user-nav__sub__item">
-              <a href="#" class="user-nav__link">MyPage</a>
+              <a href="/mypage.html" class="user-nav__link">MyPage</a>
             </li>
             <li class="user-nav__sub__item">
-              <a href="#" class="user-nav__link">Logout</a>
+              <a href="/" class="user-nav__link">Logout</a>
             </li>
           </ul>
         </div>

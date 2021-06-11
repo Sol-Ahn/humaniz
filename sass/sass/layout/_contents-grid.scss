@@ -1,0 +1,14 @@
+.contents {
+  width: 120rem;
+  display: grid;
+  grid-template: repeat(2, min-content) / repeat(4, 1fr);
+  grid-column-gap: 2.4rem;
+  grid-row-gap: 3.5rem;
+}
+
+.list-contents {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-column-gap: 2.4rem;
+  grid-row-gap: 6.4rem;
+}

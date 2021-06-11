@@ -9,80 +9,80 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/resources/slick/slick.css" />
     <link rel="stylesheet" href="/resources/slick/slick-theme.css" />
     <title>Humaniz</title>
     <link
       rel="apple-touch-icon"
       sizes="57x57"
-      href="resources/favicon/apple-icon-57x57.png"
+      href="/resources/favicon/apple-kicon-57x57.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="60x60"
-      href="resources/favicon/apple-icon-60x60.png"
+      href="/resources/favicon/apple-icon-60x60.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="resources/favicon/apple-icon-72x72.png"
+      href="/resources/favicon/apple-icon-72x72.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="76x76"
-      href="resources/favicon/apple-icon-76x76.png"
+      href="/resources/favicon/apple-icon-76x76.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="resources/favicon/apple-icon-114x114.png"
+      href="/resources/favicon/apple-icon-114x114.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href="resources/favicon/apple-icon-120x120.png"
+      href="/resources/favicon/apple-icon-120x120.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href="resources/favicon/apple-icon-144x144.png"
+      href="/resources/favicon/apple-icon-144x144.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="resources/favicon/apple-icon-152x152.png"
+      href="/resources/favicon/apple-icon-152x152.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="resources/favicon/apple-icon-180x180.png"
+      href="/resources/favicon/apple-icon-180x180.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="resources/favicon/android-icon-192x192.png"
+      href="/resources/favicon/android-icon-192x192.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="resources/favicon/favicon-32x32.png"
+      href="/resources/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="resources/favicon/favicon-96x96.png"
+      href="/resources/favicon/favicon-96x96.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="resources/favicon/favicon-16x16.png"
+      href="/resources/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="resources/favicon/manifest.json" />
+    <link rel="manifest" href="/resources/favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
@@ -90,11 +90,13 @@
   <body>
     <header class="header">
       <div class="header__box">
-        <img
-          src="/resources/img/logo-small.png"
-          alt="Humaniz logo"
-          class="header__box__logo"
-        />
+        <a href="/" class="header__box__logo--link">
+          <img
+            src="/resources/img/logo-small.png"
+            alt="Humaniz logo"
+            class="header__box__logo"
+          />
+        </a>
         <form action="#" class="search">
           <input type="text" class="search__input" placeholder="검색" />
           <button class="search__btn">
@@ -104,13 +106,13 @@
           </button>
         </form>
         <div class="user-nav">
-          <a href="#" class="user-nav__link">Login</a>
+          <a href="/login.html" class="user-nav__link">Login</a>
           <ul class="user-nav__sub">
             <li class="user-nav__sub__item">
-              <a href="#" class="user-nav__link">MyPage</a>
+              <a href="/mypage.html" class="user-nav__link">MyPage</a>
             </li>
             <li class="user-nav__sub__item">
-              <a href="#" class="user-nav__link">Logout</a>
+              <a href="/" class="user-nav__link">Logout</a>
             </li>
           </ul>
         </div>
@@ -122,16 +124,16 @@
           </button>
           <ul class="menu-nav__sub">
             <li class="menu-nav__sub__item">
-              <a href="#" class="menu-nav__sub__link">전체</a>
+              <a href="/detail.html" class="menu-nav__sub__link">전체</a>
             </li>
             <li class="menu-nav__sub__item">
-              <a href="#" class="menu-nav__sub__link">주제별</a>
+              <a href="/list.html" class="menu-nav__sub__link">주제별</a>
             </li>
             <li class="menu-nav__sub__item">
-              <a href="#" class="menu-nav__sub__link">연령별</a>
+              <a href="/list.html" class="menu-nav__sub__link">연령별</a>
             </li>
             <li class="menu-nav__sub__item">
-              <a href="#" class="menu-nav__sub__link">테마별</a>
+              <a href="/list.html" class="menu-nav__sub__link">테마별</a>
             </li>
           </ul>
         </div>
@@ -143,7 +145,7 @@
           읽기만 해도 똑똑해지는 <br />인문학 컨텐츠 구독 서비스
         </h1>
         <p class="paragraph">지금 휴머니즈를 구독하고 재미있게 똑똑해지세요!</p>
-        <a href="#" class="btn btn__subscribe">멤버십 구독하기</a>
+        <a href="/subscribe.html" class="btn btn__subscribe">멤버십 구독하기</a>
       </div>
       <div class="hero__photo">
         <img
@@ -449,14 +451,14 @@
       </section>
       <section class="section-category">
         <div class="category">
-          <h3 class="heading-3">주제별 카테고리</h3>
+          <h3 class="heading-4">주제별 카테고리</h3>
           <div class="category__box">
             <img
               src="/resources/img/category-1.png"
               alt="Category image 1"
               class="category__box__img"
             />
-            <p class="category__box__name">카테고리</p>
+            <a href="#" class="category__box__name">동양<br />철학</a>
           </div>
           <div class="category__box">
             <img
@@ -464,7 +466,7 @@
               alt="Category image 2"
               class="category__box__img"
             />
-            <p class="category__box__name">카테고리</p>
+            <a href="#" class="category__box__name">서양<br />철학</a>
           </div>
           <div class="category__box">
             <img
@@ -472,7 +474,7 @@
               alt="Category image 3"
               class="category__box__img"
             />
-            <p class="category__box__name">카테고리</p>
+            <a href="#" class="category__box__name">고전</a>
           </div>
           <div class="category__box">
             <img
@@ -480,7 +482,7 @@
               alt="Category image 4"
               class="category__box__img"
             />
-            <p class="category__box__name">카테고리</p>
+            <a href="#" class="category__box__name">문학</a>
           </div>
           <div class="category__box">
             <img
@@ -488,7 +490,10 @@
               alt="Category image 5"
               class="category__box__img"
             />
-            <p class="category__box__name">카테고리</p>
+            <a href="#" class="category__box__name">
+              교양<br />
+              인문학
+            </a>
           </div>
         </div>
       </section>

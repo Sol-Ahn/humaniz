@@ -1,0 +1,13 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    margin: 3rem;
+    padding: 2rem;
+
+    .paragraph {
+      font-size: $font-medium-2;
+    }
+  }
+}
