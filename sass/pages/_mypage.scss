@@ -92,6 +92,12 @@
         font-weight: 900;
         margin: 0 2rem;
       }
+
+      .default-open {
+        font-weight: 700;
+        padding-bottom: 0.8rem;
+        border-bottom: 4px solid $color-blue-light-2;
+      }
     }
   }
 

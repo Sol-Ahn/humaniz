@@ -181,26 +181,52 @@
         <div class="section-user__user-nav">
           <ul class="section-user__user-nav__list">
             <li>
-              <a href="#" class="section-user__user-nav__item">회원정보 수정</a>
+              <a
+                href="#"
+                class="
+                  section-user__user-nav__item
+                  section-user__user-nav__item--info-edit
+                  default-open
+                "
+                >회원정보 수정</a
+              >
               <span class="section-user__user-nav__item--line">|</span>
             </li>
             <li>
-              <a href="#" class="section-user__user-nav__item"
+              <a
+                href="#"
+                class="
+                  section-user__user-nav__item
+                  section-user__user-nav__item--my-subscribe
+                "
                 >멤버십 구독 현황</a
               ><span class="section-user__user-nav__item--line">|</span>
             </li>
             <li>
-              <a href="#" class="section-user__user-nav__item">MY 컨텐츠</a
+              <a
+                href="#"
+                class="
+                  section-user__user-nav__item
+                  section-user__user-nav__item--my-content
+                "
+                >MY 컨텐츠</a
               ><span class="section-user__user-nav__item--line">|</span>
             </li>
             <li>
-              <a href="#" class="section-user__user-nav__item">쿠폰함</a>
+              <a
+                href="#"
+                class="
+                  section-user__user-nav__item
+                  section-user__user-nav__item--coupon
+                "
+                >쿠폰함</a
+              >
             </li>
           </ul>
         </div>
       </section>
       <section class="section-content">
-        <article class="article__edit-info">
+        <article class="article__edit-info active">
           <h3 class="heading-4 article__edit-info__title">회원 정보</h3>
           <form action="" method="post" class="form__edit">
             <div class="pw">
@@ -296,7 +322,7 @@
             <button class="btn-submit form__edit__btn">수정하기</button>
           </form>
         </article>
-        <article class="article__my-subscribe">
+        <article class="article__my-subscribe hidden">
           <h3 class="heading-4 article__my-subscribe__title">
             현재 구독중인 멤버십
           </h3>
@@ -319,7 +345,7 @@
             >구독 멤버십 변경하기</a
           >
         </article>
-        <article class="article__my-contents">
+        <article class="article__my-contents hidden">
           <h3 class="heading-4 article__my-contents__title">좋아요한 컨텐츠</h3>
           <div class="my-contents__box">
             <a href="#" class="my-contents__box__btn-close">&times;</a>
@@ -373,7 +399,7 @@
             </div>
           </div>
         </article>
-        <article class="article__coupon">
+        <article class="article__coupon hidden">
           <h3 class="heading-4 article__coupon__title">현재 보유중인 쿠폰</h3>
           <div class="coupon__box">
             <p class="coupon__box__name">친구추천 이벤트</p>

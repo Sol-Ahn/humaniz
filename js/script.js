@@ -87,4 +87,18 @@ $(function () {
   $(".article__my-subscribe__btn").on("click", function () {
     window.location.href = "/subscribe.html";
   });
+
+  ///////////////////////////TAB/////////////////////////////
+  $(".section-user__user-nav__item").on("click", function (e) {
+    e.preventDefault();
+    const index = $(".section-user__user-nav__item").index($(this));
+    $(".section-user__user-nav__item").removeClass("default-open");
+    $("article").removeClass("active").addClass("hidden");
+    $(".section-user__user-nav__item:eq(" + index + ")").addClass(
+      "default-open"
+    );
+    $("article:eq(" + index + ")")
+      .removeClass("hidden")
+      .addClass("active");
+  });
 });
