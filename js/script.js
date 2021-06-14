@@ -17,7 +17,7 @@ $(function () {
     slidesToScroll: 2,
   });
 
-  ///////////////////////////MENU/////////////////////////////
+  ///////////////////////////DROPDOWN/////////////////////////////
   // home dropdown menu
   // user-nav
   let flag = false;
@@ -51,6 +51,8 @@ $(function () {
     $(".menu-nav__sub").toggle(300);
   });
 
+  ///////////////////////////ACCORDION////////////////////////////
+
   // agreement accordion
   $(".paragraph").not(".paragraph.active").hide();
   $(".agreement__box__checkbox").on("click", function () {
@@ -64,6 +66,20 @@ $(function () {
       .slideUp(500, function () {
         $(".paragraph.active").stop().slideDown(500);
       });
+  });
+
+  // list sidebar accordion
+  const mainAcc = $(".list-nav__main-menu__link");
+  const subAcc = $(".list-nav__sub-menu");
+  subAcc.hide();
+  mainAcc.on("click", function (e) {
+    e.preventDefault();
+    if ($(this).attr("class") !== "active") {
+      subAcc.slideUp(500);
+      $(this).next().stop().slideDown(500);
+      mainAcc.removeClass("active");
+      $(this).addClass("active");
+    }
   });
 
   ///////////////////////////LINK/////////////////////////////
@@ -89,6 +105,7 @@ $(function () {
   });
 
   ///////////////////////////TAB/////////////////////////////
+  // mypage tab
   $(".section-user__user-nav__item").on("click", function (e) {
     e.preventDefault();
     const index = $(".section-user__user-nav__item").index($(this));
@@ -98,6 +115,18 @@ $(function () {
       "default-open"
     );
     $("article:eq(" + index + ")")
+      .removeClass("hidden")
+      .addClass("active");
+  });
+
+  // list sidebar tab
+  $(".list-nav__main-menu__link").on("click", function (e) {
+    e.preventDefault();
+    const index = $(".list-nav__main-menu__link").index($(this));
+    $(".list-nav__main-menu__link").removeClass("default-open");
+    $("section").removeClass("active").addClass("hidden");
+    $(".list-nav__main-menu__link:eq(" + index + ")").addClass("default-open");
+    $("section:eq(" + index + ")")
       .removeClass("hidden")
       .addClass("active");
   });
