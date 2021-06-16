@@ -4,7 +4,7 @@ $(function () {
   $(".main-slider .slider").slick({
     dots: true,
     infinite: true,
-    speed: 300,
+    speed: 200,
     fade: true,
     cssEase: "linear",
     autoplay: true,
@@ -103,6 +103,10 @@ $(function () {
     window.location.href = "/subscribe.html";
   });
 
+  $(".menu-nav__sub__link").on("click", function () {
+    window.location.href = "/list.html";
+  });
+
   ///////////////////////////TAB/////////////////////////////
   // mypage tab
   $(".section-user__user-nav__item").on("click", function (e) {
@@ -160,5 +164,27 @@ $(function () {
       $(".modal-window").addClass("hidden");
       $(".overlay").addClass("hidden");
     }
+  });
+
+  ///////////////////////////SEARCHBAR/////////////////////////////
+  // autocomplete
+  const availableKeywords = [
+    "동양철학",
+    "서양철학",
+    "고전",
+    "문학",
+    "교양인문학",
+    "출근길",
+    "짧은",
+    "쉬운",
+    "역사",
+    "컨텐츠",
+    "구독",
+    "멤버십",
+    "이벤트",
+    "쿠폰",
+  ];
+  $(".search__input").autocomplete({
+    source: availableKeywords,
   });
 });
