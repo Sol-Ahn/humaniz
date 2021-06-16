@@ -359,11 +359,11 @@ body {
 
 .card {
   width: 58.8rem;
-  height: 22.2rem;
   background-color: #fff;
   border: none;
   border-radius: 1rem;
   box-shadow: 0 0.4rem 1.4rem #c4c4c4;
+  padding: 2rem;
   margin-bottom: 4.8rem;
   display: grid;
   grid-template: repeat(5, max-content)/repeat(2, max-content);

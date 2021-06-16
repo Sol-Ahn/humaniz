@@ -131,29 +131,34 @@ $(function () {
   });
 
   ///////////////////////////MODAL/////////////////////////////
-  $(".modal-window").hide();
-  $(".overlay").hide();
 
   $(".card__btn").on("click", function (e) {
     e.preventDefault();
-    $(".modal-window").show();
-    $(".overlay").show();
+    $(".modal-window").removeClass("hidden");
+    $(".overlay").removeClass("hidden");
+    console.log(1);
   });
 
-  $(".btn--close, html").on("click", function () {
-    $(".modal-window").hide();
-    $(".overlay").hide();
+  $(".btn-close").on("click", function () {
+    $(".modal-window").addClass("hidden");
+    $(".overlay").addClass("hidden");
+    console.log(2);
   });
 
   $(".overlay").on("click", function () {
-    $(".modal-window").hide();
-    $(".overlay").hide();
+    $(".modal-window").addClass("hidden");
+    $(".overlay").addClass("hidden");
+  });
+
+  $(".modal-window__box__btn--mypage").on("click", function (e) {
+    e.preventDefault();
+    window.location.href = "/mypage.html";
   });
 
   $(document).on("keydown", function (e) {
-    if (e.key === "Escape" && !$(".modal-window").hide()) {
-      $(".modal-window").hide();
-      $(".overlay").hide();
+    if (e.key === "Escape" && !$(".modal-window").hasClass("hidden")) {
+      $(".modal-window").addClass("hidden");
+      $(".overlay").addClass("hidden");
     }
   });
 });
