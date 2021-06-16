@@ -169,7 +169,8 @@ body {
 
 .contents__box,
 .list-contents__box {
-  width: 28.2rem; }
+  width: 28.2rem;
+  cursor: pointer; }
   .contents__box__thumbnail,
   .list-contents__box__thumbnail {
     width: 28.2rem;
@@ -532,7 +533,8 @@ body {
   align-items: center; }
   .header__box__logo {
     width: 18rem;
-    height: 7rem; }
+    height: 7rem;
+    cursor: pointer; }
   .header__box .search {
     margin-right: auto; }
   .header__box .user-nav {
@@ -723,7 +725,8 @@ body {
     padding: 0 2rem; }
     .login__box__logo {
       justify-self: center;
-      align-self: center; }
+      align-self: center;
+      cursor: pointer; }
     .login__box__input {
       display: grid;
       grid-row-gap: 0.6rem; }

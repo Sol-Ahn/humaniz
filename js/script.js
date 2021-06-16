@@ -82,6 +82,16 @@ $(function () {
   });
 
   ///////////////////////////LINK/////////////////////////////
+  $(".header__box__logo").on("click", function (e) {
+    e.preventDefault();
+    window.location.href = "/index.html";
+  });
+
+  $(".login__box__logo").on("click", function (e) {
+    e.preventDefault();
+    window.location.href = "/index.html";
+  });
+
   $(".banner__event").on("click", function () {
     window.location.href = "/event.html";
   });
@@ -95,7 +105,8 @@ $(function () {
     window.location.href = "/";
   });
 
-  $(".btn-subscribe").on("click", function () {
+  $(".btn-subscribe").on("click", function (e) {
+    e.preventDefault();
     window.location.href = "/subscribe.html";
   });
 
@@ -105,6 +116,10 @@ $(function () {
 
   $(".menu-nav__sub__link").on("click", function () {
     window.location.href = "/list.html";
+  });
+
+  $(".contents__box").on("click", function () {
+    window.location.href = "/detail.html";
   });
 
   ///////////////////////////TAB/////////////////////////////
@@ -186,5 +201,14 @@ $(function () {
   ];
   $(".search__input").autocomplete({
     source: availableKeywords,
+  });
+
+  ///////////////////////////FLOATINGBAR/////////////////////////////
+  const curPosition = $(".floating-bar").css("top");
+  $(window).scroll(function () {
+    const position = $(window).scrollTop();
+    $(".floating-bar")
+      .stop()
+      .animate({ top: position + curPosition + "px" }, 1000);
   });
 });
