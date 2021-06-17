@@ -10,9 +10,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/resources/ui/jquery-ui.css" />
     <link rel="stylesheet" href="/resources/slick/slick.css" />
     <link rel="stylesheet" href="/resources/slick/slick-theme.css" />
     <script src="/resources/lib/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="/resources/slick/slick.min.js"></script>
     <script defer src="/js/script.js"></script>
     <title>Humaniz</title>
@@ -93,13 +95,11 @@
   <body>
     <header class="header">
       <div class="header__box">
-        <a href="/" class="header__box__logo--link">
           <img
             src="/resources/img/logo-small.png"
             alt="Humaniz logo"
             class="header__box__logo"
           />
-        </a>
         <form action="#" class="search">
           <input type="text" class="search__input" placeholder="검색" />
           <button class="search__btn">
@@ -169,25 +169,31 @@
       <div class="main__list__container">
         <nav class="list-nav">
           <div class="list-nav__main-menu">
-            <a href="#" class="list-nav__main-menu__link">전체</a>
+            <a href="#" class="list-nav__main-menu__link default-open">전체</a>
           </div>
           <div class="list-nav__main-menu">
             <a href="#" class="list-nav__main-menu__link">주제별</a>
             <ul class="list-nav__sub-menu">
               <li class="list-nav__sub-menu__item">
-                <a href="#" class="list-nav__sub-menu__link">동양철학</a>
+                <a href="#subject-1" class="list-nav__sub-menu__link"
+                  >동양철학</a
+                >
               </li>
               <li class="list-nav__sub-menu__item">
-                <a href="#" class="list-nav__sub-menu__link">서양철학</a>
+                <a href="#subject-2" class="list-nav__sub-menu__link"
+                  >서양철학</a
+                >
               </li>
               <li class="list-nav__sub-menu__item">
-                <a href="#" class="list-nav__sub-menu__link">고전</a>
+                <a href="#subject-3" class="list-nav__sub-menu__link">고전</a>
               </li>
               <li class="list-nav__sub-menu__item">
-                <a href="#" class="list-nav__sub-menu__link">문학</a>
+                <a href="#subject-4" class="list-nav__sub-menu__link">문학</a>
               </li>
               <li class="list-nav__sub-menu__item">
-                <a href="#" class="list-nav__sub-menu__link">교양인문학</a>
+                <a href="#subject-5" class="list-nav__sub-menu__link"
+                  >교양인문학</a
+                >
               </li>
             </ul>
           </div>
@@ -195,19 +201,19 @@
             <a href="#" class="list-nav__main-menu__link">연령별</a>
             <ul class="list-nav__sub-menu">
               <li class="list-nav__sub-menu__item">
-                <a href="#" class="list-nav__sub-menu__link">10대</a>
+                <a href="#age-1" class="list-nav__sub-menu__link">10대</a>
               </li>
               <li class="list-nav__sub-menu__item">
-                <a href="#" class="list-nav__sub-menu__link">20대</a>
+                <a href="#age-2" class="list-nav__sub-menu__link">20대</a>
               </li>
               <li class="list-nav__sub-menu__item">
-                <a href="#" class="list-nav__sub-menu__link">30대</a>
+                <a href="#age-3" class="list-nav__sub-menu__link">30대</a>
               </li>
               <li class="list-nav__sub-menu__item">
-                <a href="#" class="list-nav__sub-menu__link">40대</a>
+                <a href="#age-4" class="list-nav__sub-menu__link">40대</a>
               </li>
               <li class="list-nav__sub-menu__item">
-                <a href="#" class="list-nav__sub-menu__link">50대 이상</a>
+                <a href="#age-5" class="list-nav__sub-menu__link">50대 이상</a>
               </li>
             </ul>
           </div>
@@ -215,22 +221,24 @@
             <a href="#" class="list-nav__main-menu__link">테마별</a>
             <ul class="list-nav__sub-menu">
               <li class="list-nav__sub-menu__item">
-                <a href="#" class="list-nav__sub-menu__link"
+                <a href="#theme-1" class="list-nav__sub-menu__link"
                   >미디어 속 인문학</a
                 >
               </li>
               <li class="list-nav__sub-menu__item">
-                <a href="#" class="list-nav__sub-menu__link"
+                <a href="#theme-2" class="list-nav__sub-menu__link"
                   >똑똑해지는 출근길</a
                 >
               </li>
               <li class="list-nav__sub-menu__item">
-                <a href="#" class="list-nav__sub-menu__link">고전 쉽게 읽기</a>
+                <a href="#theme-3" class="list-nav__sub-menu__link"
+                  >고전 쉽게 읽기</a
+                >
               </li>
             </ul>
           </div>
         </nav>
-        <section class="section-all">
+        <section class="section-all active">
           <h3 class="heading-3 section-all__title">전체</h3>
           <div class="select__contents-order-select">
             <select name="order-select" id="contents-order-select">
@@ -437,9 +445,11 @@
             </div>
           </div>
         </section>
-        <section class="section-subject">
+        <section class="section-subject hidden">
           <h3 class="heading-3 section-subject__title">주제별</h3>
-          <h5 class="heading-5 section-subject__sub-title">동양철학</h5>
+          <h5 class="heading-5 section-subject__sub-title" id="subject-1">
+            동양철학
+          </h5>
           <div class="list-contents">
             <div class="list-contents__box">
               <img
@@ -634,7 +644,9 @@
               </div>
             </div>
           </div>
-          <h5 class="heading-5 section-subject__sub-title">서양철학</h5>
+          <h5 class="heading-5 section-subject__sub-title" id="subject-2">
+            서양철학
+          </h5>
           <div class="list-contents">
             <div class="list-contents__box">
               <img
@@ -829,7 +841,9 @@
               </div>
             </div>
           </div>
-          <h5 class="heading-5 section-subject__sub-title">고전</h5>
+          <h5 class="heading-5 section-subject__sub-title" id="subject-3">
+            고전
+          </h5>
           <div class="list-contents">
             <div class="list-contents__box">
               <img
@@ -1024,7 +1038,9 @@
               </div>
             </div>
           </div>
-          <h5 class="heading-5 section-subject__sub-title">문학</h5>
+          <h5 class="heading-5 section-subject__sub-title" id="subject-4">
+            문학
+          </h5>
           <div class="list-contents">
             <div class="list-contents__box">
               <img
@@ -1219,7 +1235,9 @@
               </div>
             </div>
           </div>
-          <h5 class="heading-5 section-subject__sub-title">교양인문학</h5>
+          <h5 class="heading-5 section-subject__sub-title" id="subject-5">
+            교양인문학
+          </h5>
           <div class="list-contents">
             <div class="list-contents__box">
               <img
@@ -1415,9 +1433,9 @@
             </div>
           </div>
         </section>
-        <section class="section-age">
+        <section class="section-age hidden">
           <h3 class="heading-3 section-age__title">연령별</h3>
-          <h5 class="heading-5 section-age__sub-title">10대</h5>
+          <h5 class="heading-5 section-age__sub-title" id="age-1">10대</h5>
           <div class="list-contents">
             <div class="list-contents__box">
               <img
@@ -1612,7 +1630,7 @@
               </div>
             </div>
           </div>
-          <h5 class="heading-5 section-age__sub-title">20대</h5>
+          <h5 class="heading-5 section-age__sub-title" id="age-2">20대</h5>
           <div class="list-contents">
             <div class="list-contents__box">
               <img
@@ -1807,7 +1825,7 @@
               </div>
             </div>
           </div>
-          <h5 class="heading-5 section-age__sub-title">30대</h5>
+          <h5 class="heading-5 section-age__sub-title" id="age-3">30대</h5>
           <div class="list-contents">
             <div class="list-contents__box">
               <img
@@ -2002,7 +2020,7 @@
               </div>
             </div>
           </div>
-          <h5 class="heading-5 section-age__sub-title">40대</h5>
+          <h5 class="heading-5 section-age__sub-title" id="age-4">40대</h5>
           <div class="list-contents">
             <div class="list-contents__box">
               <img
@@ -2197,7 +2215,7 @@
               </div>
             </div>
           </div>
-          <h5 class="heading-5 section-age__sub-title">50대 이상</h5>
+          <h5 class="heading-5 section-age__sub-title" id="age-5">50대 이상</h5>
           <div class="list-contents">
             <div class="list-contents__box">
               <img
@@ -2393,9 +2411,9 @@
             </div>
           </div>
         </section>
-        <section class="section-theme">
+        <section class="section-theme hidden">
           <h3 class="heading-3 section-theme__title">테마별</h3>
-          <h5 class="heading-5 section-theme__sub-title">미디어 속 인문학</h5>
+          <h5 class="heading-5 section-theme__sub-title" id="theme-1">미디어 속 인문학</h5>
           <div class="list-contents">
             <div class="list-contents__box">
               <img
@@ -2590,7 +2608,7 @@
               </div>
             </div>
           </div>
-          <h5 class="heading-5 section-theme__sub-title">똑똑해지는 출근길</h5>
+          <h5 class="heading-5 section-theme__sub-title" id="theme-2">똑똑해지는 출근길</h5>
           <div class="list-contents">
             <div class="list-contents__box">
               <img
@@ -2785,7 +2803,8 @@
               </div>
             </div>
           </div>
-          <h5 class="heading-5 section-theme__sub-title">고전 쉽게 읽기</h5>
+          <h5 class="heading-5 section-theme__sub-title" id=
+          "theme-3">고전 쉽게 읽기</h5>
           <div class="list-contents">
             <div class="list-contents__box">
               <img

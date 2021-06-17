@@ -5,12 +5,13 @@
 
   &__input {
     font-family: inherit;
-    font-size: inherit;
+    font-size: $font-medium-2;
     color: inherit;
     border: 1px solid $color-grey-light-2;
     border-radius: 5px;
     width: 48.6rem;
     height: 5rem;
+    padding: 1rem;
     margin: 2rem 0;
 
     &:focus {
@@ -20,9 +21,8 @@
 
     &::placeholder {
       font-weight: 300;
-      font-size: $font-medium-2;
+      font-size: inherit;
       color: $color-grey-dark-1;
-      padding: 1rem 0.7rem;
     }
   }
 
@@ -30,6 +30,7 @@
     border: none;
     background: none;
     margin-left: -4.5rem;
+    cursor: pointer;
 
     &:focus {
       outline: none;
@@ -41,4 +42,9 @@
     width: 3rem;
     fill: $color-blue-light-2;
   }
+}
+
+.ui-menu-item-wrapper {
+  font-family: inherit;
+  font-size: $font-default;
 }
