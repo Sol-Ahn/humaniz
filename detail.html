@@ -1,487 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/resources/slick/slick.css" />
-    <link rel="stylesheet" href="/resources/slick/slick-theme.css" />
-    <script src="/resources/lib/jquery-3.6.0.min.js"></script>
-    <script src="/resources/slick/slick.min.js"></script>
-    <script defer src="/js/script.js"></script>
-    <title>Humaniz</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="resources/favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="resources/favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="resources/favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="resources/favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="resources/favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="resources/favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="resources/favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="resources/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="resources/favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="resources/favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="resources/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="resources/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="resources/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="resources/favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__box">
-        <a href="/" class="header__box__logo--link">
-          <img
-            src="/resources/img/logo-small.png"
-            alt="Humaniz logo"
-            class="header__box__logo"
-          />
-        </a>
-        <form action="#" class="search">
-          <input type="text" class="search__input" placeholder="검색" />
-          <button class="search__btn">
-            <svg class="search__icon">
-              <use xlink:href="/resources/icon/sprite.svg#icon-search"></use>
-            </svg>
-          </button>
-        </form>
-        <div class="user-nav">
-          <a href="/login.html" class="user-nav__link user-nav__link--login"
-            >Login</a
-          >
-          <ul class="user-nav__sub">
-            <li class="user-nav__sub__item">
-              <a
-                href="/mypage.html"
-                class="user-nav__link user-nav__link--mypage"
-                >MyPage</a
-              >
-            </li>
-            <li class="user-nav__sub__item">
-              <a href="/" class="user-nav__link user-nav__link--logout"
-                >Logout</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="menu-nav">
-          <button class="btn__menu">
-            <svg class="btn__menu--icon">
-              <use xlink:href="/resources/icon/sprite.svg#icon-menu"></use>
-            </svg>
-          </button>
-          <ul class="menu-nav__sub">
-            <li class="menu-nav__sub__item">
-              <a href="#" class="menu-nav__sub__link">전체</a>
-            </li>
-            <li class="menu-nav__sub__item">
-              <a href="#" class="menu-nav__sub__link">주제별</a>
-            </li>
-            <li class="menu-nav__sub__item">
-              <a href="#" class="menu-nav__sub__link">연령별</a>
-            </li>
-            <li class="menu-nav__sub__item">
-              <a href="#" class="menu-nav__sub__link">테마별</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <main class="main__detail">
-      <section class="section-hero">
-        <div class="section-hero__box">
-          <h2 class="heading-2 section-hero__box__title">
-            Lorem ipsum dolor sit amet, consectetur adipiscing sem risus nisl
-            vitae tellus ut eget eget accumsan
-          </h2>
-          <ul class="section-hero__box__hashtags">
-            <li class="section-hero__box__hashtags--item">#해시태그</li>
-            <li class="section-hero__box__hashtags--item">#해시태그</li>
-            <li class="section-hero__box__hashtags--item">#해시태그</li>
-          </ul>
-          <div class="section-hero__box__description">
-            <p class="section-hero__box__description--duration">
-              2021-01-01 FRI
-            </p>
-            <p class="section-hero__box__description--editor">
-              <span>
-                <svg>
-                  <use
-                    xlink:href="/resources/icon/sprite.svg#icon-feather"
-                  ></use>
-                </svg>
-              </span>
-              에디터 A
-            </p>
-            <div class="section-hero__box__description--features">
-              <p class="section-hero__box__description--features--like">
-                <span>
-                  <svg>
-                    <use
-                      xlink:href="/resources/icon/sprite.svg#icon-heart"
-                    ></use>
-                  </svg>
-                </span>
-                100
-              </p>
-              <p class="section-hero__box__description--features--bookmark">
-                <span>
-                  <svg>
-                    <use
-                      xlink:href="/resources/icon/sprite.svg#icon-bookmark"
-                    ></use>
-                  </svg>
-                </span>
-                1.1K
-              </p>
-              <p class="section-hero__box__description--features--view">
-                <span>
-                  <svg>
-                    <use xlink:href="/resources/icon/sprite.svg#icon-eye"></use>
-                  </svg>
-                </span>
-                1.1M
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-content">
-        <div class="section-content__container">
-          <figure class="section-content__container__thumbnail">
-            <img
-              src="/resources/img/contents-thumbnail.png"
-              alt="Contents detail thumbnail"
-            />
-          </figure>
-          <article class="article__contents-detail article__contents-detail--1">
-            <h3 class="heading-3 article__contents-detail__title">
-              Lorem ipsum dolor sit amet, consectetur
-            </h3>
-            <p class="article__contents-detail__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-              sagittis, ut tristique magna ultricies nulla quis. Pharetra lectus
-              sit sit mauris eu nibh gravida. Egestas felis lorem enim enim
-              massa orci suspendisse. Fringilla ut sit amet ipsum, arcu lacinia
-              venenatis elit, tortor.
-            </p>
-            <p class="article__contents-detail__paragraph">
-              Quis mollis enim facilisis nibh ut gravida commodo, rutrum lacus.
-              Mattis tempus dignissim cursus ac facilisi dictum penatibus. Quam
-              cursus tempus a est a vestibulum nunc.
-            </p>
-            <p class="article__contents-detail__paragraph">
-              Mauris in faucibus id risus ac libero. Eu amet in id cum tristique
-              scelerisque malesuada nulla purus. In risus justo pharetra, purus
-              enim. Sed amet, mollis facilisis ut ut tempus. Massa sollicitudin
-              massa egestas pulvinar id commodo. Integer tempus, lectus
-              consequat eros erat. Morbi malesuada a proin vestibulum cursus
-              risus id donec rutrum. Nulla turpis quis faucibus porttitor et
-              accumsan. Lacinia lorem diam integer in egestas pellentesque.
-            </p>
-            <p class="article__contents-detail__paragraph">
-              Odio et duis ultrices diam. In id suscipit pellentesque odio
-              tortor, orci mauris enim ultrices. Orci dis magna orci praesent.
-              Hendrerit integer justo neque porta pretium in ac in quis. A leo
-              pharetra adipiscing mi aliquam sed. Fermentum, dolor diam luctus
-              quis adipiscing aliquam. Nulla ut magna posuere enim euismod
-              ligula fames ac risus.
-            </p>
-            <figure class="article__contents-detail__img">
-              <img
-                src="/resources/img/contents-1.png"
-                alt="Contents detail img 1"
-              />
-            </figure>
-          </article>
-          <article class="article__contents-detail article__contents-detail--2">
-            <h3 class="heading-3 article__contents-detail__title">
-              Lorem ipsum dolor sit amet
-            </h3>
-            <p class="article__contents-detail__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-              sagittis, ut tristique magna ultricies nulla quis. Pharetra lectus
-              sit sit mauris eu nibh gravida.
-            </p>
-            <p class="article__contents-detail__paragraph">
-              Egestas felis lorem enimenim massa orci suspendisse. Fringilla ut
-              sit amet ipsum, arcu lacinia venenatis elit, tortor.
-            </p>
-            <p class="article__contents-detail__paragraph">
-              Quis mollis enim facilisis nibh ut gravida commodo, rutrum lacus.
-              Mattis tempus dignissim cursus ac facilisi dictum penatibus. Quam
-              cursus tempus a est a vestibulum nunc. Mauris in faucibus id risus
-              ac libero. Eu amet in id cum tristique scelerisque malesuada nulla
-              purus. In risus justo pharetra, purus enim. Sed amet, mollis
-              facilisis ut ut tempus. Massae.
-            </p>
-            <p class="article__contents-detail__paragraph">
-              Odio et duis ultrices diam. In id suscipit pellentesque odio
-              tortor, orci mauris enim ultrices. Orci dis magna orci praesent.
-              Hendrerit integer justo neque porta pretium in ac in quis. A leo
-              pharetra adipiscing mi aliquam sed. Fermentum, dolor diam luctus
-              quis adipiscing aliquam. Nulla ut magna posuere enim euismod
-              ligula fames ac risus.
-            </p>
-            <figure class="article__contents-detail__img">
-              <img
-                src="/resources/img/contents-2.png"
-                alt="Contents detail img 2"
-              />
-              <figcaption>
-                Sagittis, semper montes, facilisis scelerisque
-              </figcaption>
-            </figure>
-            <figure class="article__contents-detail__img">
-              <img
-                src="/resources/img/contents-3.png"
-                alt="Contents detail img 3"
-              />
-            </figure>
-            <p class="article__contents-detail__paragraph">
-              Magna vestibulum scelerisque scelerisque tincidunt. Id
-              cursuvulputate habitant libero in et. Tortor purus tristique
-              malesuada elit. Tortor, nascetur volutpat sem turpis at Hendrerit
-              integer justo neque porta pretium in ac in quis. A leo pharetra
-              adipiscing mi aliquam sed. Fermentum, dolor diam luctus quis
-              adipiscing aliquam.
-            </p>
-            <h3 class="heading-3 article__contents-detail__title">
-              Lorem ipsum dolor sit amet
-            </h3>
-            <p class="article__contents-detail__paragraph">
-              Sagittis, semper montes, facilisis scelerisque purus ultricies sed
-              augue. Fermentum eget non sed arcu viverra dictum nascetur
-              tincidunt sed.
-            </p>
-          </article>
-          <article class="article__contents-detail__recommend">
-            <h3 class="heading-3 article__contents-detail__recommend--title">
-              함께 보면 더 똑똑해지는 컨텐츠
-            </h3>
-            <div class="recommend-slider">
-              <div class="slider">
-                <div class="slide">
-                  <img
-                    src="/resources/img/mock_img.jpg"
-                    alt="Slide Photo 1"
-                    class="slide__img"
-                  />
-                  <div class="slide__description">
-                    <h5 class="heading-5 slide__description__title">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </h5>
-                    <ul class="slide__description__hashtags--list">
-                      <li class="slide__description__hashtags--item">
-                        #해시태그
-                      </li>
-                      <li class="slide__description__hashtags--item">
-                        #해시태그
-                      </li>
-                      <li class="slide__description__hashtags--item">
-                        #해시태그
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="slide">
-                  <img
-                    src="/resources/img/mock_img.jpg"
-                    alt="Slide Photo 1"
-                    class="slide__img"
-                  />
-                  <div class="slide__description">
-                    <h5 class="heading-5 slide__description__title">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </h5>
-                    <ul class="slide__description__hashtags--list">
-                      <li class="slide__description__hashtags--item">
-                        #해시태그
-                      </li>
-                      <li class="slide__description__hashtags--item">
-                        #해시태그
-                      </li>
-                      <li class="slide__description__hashtags--item">
-                        #해시태그
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="slide">
-                  <img
-                    src="/resources/img/mock_img.jpg"
-                    alt="Slide Photo 1"
-                    class="slide__img"
-                  />
-                  <div class="slide__description">
-                    <h5 class="heading-5 slide__description__title">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </h5>
-                    <ul class="slide__description__hashtags--list">
-                      <li class="slide__description__hashtags--item">
-                        #해시태그
-                      </li>
-                      <li class="slide__description__hashtags--item">
-                        #해시태그
-                      </li>
-                      <li class="slide__description__hashtags--item">
-                        #해시태그
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="slide">
-                  <img
-                    src="/resources/img/mock_img.jpg"
-                    alt="Slide Photo 1"
-                    class="slide__img"
-                  />
-                  <div class="slide__description">
-                    <h5 class="heading-5 slide__description__title">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </h5>
-                    <ul class="slide__description__hashtags--list">
-                      <li class="slide__description__hashtags--item">
-                        #해시태그
-                      </li>
-                      <li class="slide__description__hashtags--item">
-                        #해시태그
-                      </li>
-                      <li class="slide__description__hashtags--item">
-                        #해시태그
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__nav">
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#" class="footer__link">회사소개</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">채용정보</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">개인정보처리방침</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">이용약관</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">공지사항</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">고객센터</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">도움말</a>
-          </li>
-        </ul>
-      </div>
-      <hr />
-      <div class="footer__box">
-        <div class="footer__box--logo">
-          <img
-            src="/resources/img/logo-footer.png"
-            alt="Footer logo"
-            class="footer__logo"
-          />
-          <span>(주)휴머니즈</span>
-        </div>
-        <div class="footer__box--sns">
-          <svg class="footer__sns__icon">
-            <use xlink:href="/resources/icon/sprite.svg#icon-facebook"></use>
-          </svg>
-          <svg class="footer__sns__icon">
-            <use xlink:href="/resources/icon/sprite.svg#icon-twitter"></use>
-          </svg>
-          <svg class="footer__sns__icon">
-            <use xlink:href="/resources/icon/sprite.svg#icon-instagram"></use>
-          </svg>
-          <svg class="footer__sns__icon">
-            <use xlink:href="/resources/icon/sprite.svg#icon-youtube"></use>
-          </svg>
-        </div>
-      </div>
-      <p class="footer__text">
-        대표자: 안솔 | 사업자번호: 000-00-00000 | 통신판매업: 2021-00000-0000
-        <br />
-        주소: 서울특별시 아무개구 아무개로 000 아무개건물 000-0호 | 대표번호:
-        02-000-0000 | 이메일: info@humaniz.com
-      </p>
-      <p class="footer__copyright">
-        Copyright &copy; Humaniz. All rights reserved.
-      </p>
-    </footer>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/resources/slick/slick.css" />
+		<link rel="stylesheet" href="/resources/slick/slick-theme.css" />
+		<script src="/resources/lib/jquery-3.6.0.min.js"></script>
+		<script src="/resources/slick/slick.min.js"></script>
+		<script defer src="/js/script.js"></script>
+		<title>Humaniz</title>
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="resources/favicon/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="resources/favicon/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="resources/favicon/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="resources/favicon/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="resources/favicon/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="resources/favicon/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="resources/favicon/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="resources/favicon/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="resources/favicon/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="resources/favicon/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="resources/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="resources/favicon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="resources/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="resources/favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__box">
+				<a href="/" class="header__box__logo--link">
+					<img
+						src="/resources/img/logo-small.png"
+						alt="Humaniz logo"
+						class="header__box__logo"
+					/>
+				</a>
+				<form action="#" class="search">
+					<input type="text" class="search__input" placeholder="검색" />
+					<button class="search__btn">
+						<svg class="search__icon">
+							<use xlink:href="/resources/icon/sprite.svg#icon-search"></use>
+						</svg>
+					</button>
+				</form>
+				<div class="user-nav">
+					<a href="/login.html" class="user-nav__link user-nav__link--login"
+						>Login</a
+					>
+					<ul class="user-nav__sub">
+						<li class="user-nav__sub__item">
+							<a
+								href="/mypage.html"
+								class="user-nav__link user-nav__link--mypage"
+								>MyPage</a
+							>
+						</li>
+						<li class="user-nav__sub__item">
+							<a href="/" class="user-nav__link user-nav__link--logout"
+								>Logout</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="menu-nav">
+					<button class="btn__menu">
+						<svg class="btn__menu--icon">
+							<use xlink:href="/resources/icon/sprite.svg#icon-menu"></use>
+						</svg>
+					</button>
+					<ul class="menu-nav__sub">
+						<li class="menu-nav__sub__item">
+							<a href="#" class="menu-nav__sub__link">전체</a>
+						</li>
+						<li class="menu-nav__sub__item">
+							<a href="#" class="menu-nav__sub__link">주제별</a>
+						</li>
+						<li class="menu-nav__sub__item">
+							<a href="#" class="menu-nav__sub__link">연령별</a>
+						</li>
+						<li class="menu-nav__sub__item">
+							<a href="#" class="menu-nav__sub__link">테마별</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="main__detail">
+			<section class="section-hero">
+				<div class="section-hero__box">
+					<h2 class="heading-2 section-hero__box__title">
+						Lorem ipsum dolor sit amet, consectetur adipiscing sem risus nisl
+						vitae tellus ut eget eget accumsan
+					</h2>
+					<ul class="section-hero__box__hashtags">
+						<li class="section-hero__box__hashtags--item">#해시태그</li>
+						<li class="section-hero__box__hashtags--item">#해시태그</li>
+						<li class="section-hero__box__hashtags--item">#해시태그</li>
+					</ul>
+					<div class="section-hero__box__description">
+						<p class="section-hero__box__description--duration">
+							2021-01-01 FRI
+						</p>
+						<p class="section-hero__box__description--editor">
+							<span>
+								<svg>
+									<use
+										xlink:href="/resources/icon/sprite.svg#icon-feather"
+									></use>
+								</svg>
+							</span>
+							에디터 A
+						</p>
+						<div class="section-hero__box__description--features">
+							<p class="section-hero__box__description--features--like">
+								<span>
+									<svg>
+										<use
+											xlink:href="/resources/icon/sprite.svg#icon-heart"
+										></use>
+									</svg>
+								</span>
+								100
+							</p>
+							<p class="section-hero__box__description--features--bookmark">
+								<span>
+									<svg>
+										<use
+											xlink:href="/resources/icon/sprite.svg#icon-bookmark"
+										></use>
+									</svg>
+								</span>
+								1.1K
+							</p>
+							<p class="section-hero__box__description--features--view">
+								<span>
+									<svg>
+										<use xlink:href="/resources/icon/sprite.svg#icon-eye"></use>
+									</svg>
+								</span>
+								1.1M
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-content">
+				<div class="section-content__container">
+					<figure class="section-content__container__thumbnail">
+						<img
+							src="/resources/img/contents-thumbnail.png"
+							alt="Contents detail thumbnail"
+						/>
+					</figure>
+					<article class="article__contents-detail article__contents-detail--1">
+						<h3 class="heading-3 article__contents-detail__title">
+							Lorem ipsum dolor sit amet, consectetur
+						</h3>
+						<p class="article__contents-detail__paragraph">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+							sagittis, ut tristique magna ultricies nulla quis. Pharetra lectus
+							sit sit mauris eu nibh gravida. Egestas felis lorem enim enim
+							massa orci suspendisse. Fringilla ut sit amet ipsum, arcu lacinia
+							venenatis elit, tortor.
+						</p>
+						<p class="article__contents-detail__paragraph">
+							Quis mollis enim facilisis nibh ut gravida commodo, rutrum lacus.
+							Mattis tempus dignissim cursus ac facilisi dictum penatibus. Quam
+							cursus tempus a est a vestibulum nunc.
+						</p>
+						<p class="article__contents-detail__paragraph">
+							Mauris in faucibus id risus ac libero. Eu amet in id cum tristique
+							scelerisque malesuada nulla purus. In risus justo pharetra, purus
+							enim. Sed amet, mollis facilisis ut ut tempus. Massa sollicitudin
+							massa egestas pulvinar id commodo. Integer tempus, lectus
+							consequat eros erat. Morbi malesuada a proin vestibulum cursus
+							risus id donec rutrum. Nulla turpis quis faucibus porttitor et
+							accumsan. Lacinia lorem diam integer in egestas pellentesque.
+						</p>
+						<p class="article__contents-detail__paragraph">
+							Odio et duis ultrices diam. In id suscipit pellentesque odio
+							tortor, orci mauris enim ultrices. Orci dis magna orci praesent.
+							Hendrerit integer justo neque porta pretium in ac in quis. A leo
+							pharetra adipiscing mi aliquam sed. Fermentum, dolor diam luctus
+							quis adipiscing aliquam. Nulla ut magna posuere enim euismod
+							ligula fames ac risus.
+						</p>
+						<figure class="article__contents-detail__img">
+							<img
+								src="/resources/img/contents-1.png"
+								alt="Contents detail img 1"
+							/>
+						</figure>
+					</article>
+					<article class="article__contents-detail article__contents-detail--2">
+						<h3 class="heading-3 article__contents-detail__title">
+							Lorem ipsum dolor sit amet
+						</h3>
+						<p class="article__contents-detail__paragraph">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+							sagittis, ut tristique magna ultricies nulla quis. Pharetra lectus
+							sit sit mauris eu nibh gravida.
+						</p>
+						<p class="article__contents-detail__paragraph">
+							Egestas felis lorem enimenim massa orci suspendisse. Fringilla ut
+							sit amet ipsum, arcu lacinia venenatis elit, tortor.
+						</p>
+						<p class="article__contents-detail__paragraph">
+							Quis mollis enim facilisis nibh ut gravida commodo, rutrum lacus.
+							Mattis tempus dignissim cursus ac facilisi dictum penatibus. Quam
+							cursus tempus a est a vestibulum nunc. Mauris in faucibus id risus
+							ac libero. Eu amet in id cum tristique scelerisque malesuada nulla
+							purus. In risus justo pharetra, purus enim. Sed amet, mollis
+							facilisis ut ut tempus. Massae.
+						</p>
+						<p class="article__contents-detail__paragraph">
+							Odio et duis ultrices diam. In id suscipit pellentesque odio
+							tortor, orci mauris enim ultrices. Orci dis magna orci praesent.
+							Hendrerit integer justo neque porta pretium in ac in quis. A leo
+							pharetra adipiscing mi aliquam sed. Fermentum, dolor diam luctus
+							quis adipiscing aliquam. Nulla ut magna posuere enim euismod
+							ligula fames ac risus.
+						</p>
+						<figure class="article__contents-detail__img">
+							<img
+								src="/resources/img/contents-2.png"
+								alt="Contents detail img 2"
+							/>
+							<figcaption>
+								Sagittis, semper montes, facilisis scelerisque
+							</figcaption>
+						</figure>
+						<figure class="article__contents-detail__img">
+							<img
+								src="/resources/img/contents-3.png"
+								alt="Contents detail img 3"
+							/>
+						</figure>
+						<p class="article__contents-detail__paragraph">
+							Magna vestibulum scelerisque scelerisque tincidunt. Id
+							cursuvulputate habitant libero in et. Tortor purus tristique
+							malesuada elit. Tortor, nascetur volutpat sem turpis at Hendrerit
+							integer justo neque porta pretium in ac in quis. A leo pharetra
+							adipiscing mi aliquam sed. Fermentum, dolor diam luctus quis
+							adipiscing aliquam.
+						</p>
+						<h3 class="heading-3 article__contents-detail__title">
+							Lorem ipsum dolor sit amet
+						</h3>
+						<p class="article__contents-detail__paragraph">
+							Sagittis, semper montes, facilisis scelerisque purus ultricies sed
+							augue. Fermentum eget non sed arcu viverra dictum nascetur
+							tincidunt sed.
+						</p>
+					</article>
+					<article class="article__contents-detail__recommend">
+						<h3 class="heading-3 article__contents-detail__recommend--title">
+							함께 보면 더 똑똑해지는 컨텐츠
+						</h3>
+						<div class="recommend-slider">
+							<div class="slider">
+								<div class="slide">
+									<img
+										src="/resources/img/mock_img.jpg"
+										alt="Slide Photo 1"
+										class="slide__img"
+									/>
+									<div class="slide__description">
+										<h5 class="heading-5 slide__description__title">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										</h5>
+										<ul class="slide__description__hashtags--list">
+											<li class="slide__description__hashtags--item">
+												#해시태그
+											</li>
+											<li class="slide__description__hashtags--item">
+												#해시태그
+											</li>
+											<li class="slide__description__hashtags--item">
+												#해시태그
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="slide">
+									<img
+										src="/resources/img/mock_img.jpg"
+										alt="Slide Photo 1"
+										class="slide__img"
+									/>
+									<div class="slide__description">
+										<h5 class="heading-5 slide__description__title">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										</h5>
+										<ul class="slide__description__hashtags--list">
+											<li class="slide__description__hashtags--item">
+												#해시태그
+											</li>
+											<li class="slide__description__hashtags--item">
+												#해시태그
+											</li>
+											<li class="slide__description__hashtags--item">
+												#해시태그
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="slide">
+									<img
+										src="/resources/img/mock_img.jpg"
+										alt="Slide Photo 1"
+										class="slide__img"
+									/>
+									<div class="slide__description">
+										<h5 class="heading-5 slide__description__title">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										</h5>
+										<ul class="slide__description__hashtags--list">
+											<li class="slide__description__hashtags--item">
+												#해시태그
+											</li>
+											<li class="slide__description__hashtags--item">
+												#해시태그
+											</li>
+											<li class="slide__description__hashtags--item">
+												#해시태그
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="slide">
+									<img
+										src="/resources/img/mock_img.jpg"
+										alt="Slide Photo 1"
+										class="slide__img"
+									/>
+									<div class="slide__description">
+										<h5 class="heading-5 slide__description__title">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										</h5>
+										<ul class="slide__description__hashtags--list">
+											<li class="slide__description__hashtags--item">
+												#해시태그
+											</li>
+											<li class="slide__description__hashtags--item">
+												#해시태그
+											</li>
+											<li class="slide__description__hashtags--item">
+												#해시태그
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__nav">
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link">회사소개</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">채용정보</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">개인정보처리방침</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">이용약관</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">공지사항</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">고객센터</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">도움말</a>
+					</li>
+				</ul>
+			</div>
+			<hr />
+			<div class="footer__box">
+				<div class="footer__box--logo">
+					<img
+						src="/resources/img/logo-footer.png"
+						alt="Footer logo"
+						class="footer__logo"
+					/>
+					<span>(주)휴머니즈</span>
+				</div>
+				<div class="footer__box--sns">
+					<svg class="footer__sns__icon">
+						<use xlink:href="/resources/icon/sprite.svg#icon-facebook"></use>
+					</svg>
+					<svg class="footer__sns__icon">
+						<use xlink:href="/resources/icon/sprite.svg#icon-twitter"></use>
+					</svg>
+					<svg class="footer__sns__icon">
+						<use xlink:href="/resources/icon/sprite.svg#icon-instagram"></use>
+					</svg>
+					<svg class="footer__sns__icon">
+						<use xlink:href="/resources/icon/sprite.svg#icon-youtube"></use>
+					</svg>
+				</div>
+			</div>
+			<p class="footer__text">
+				대표자: 안솔 | 사업자번호: 000-00-00000 | 통신판매업: 2021-00000-0000
+				<br />
+				주소: 서울특별시 아무개구 아무개로 000 아무개건물 000-0호 | 대표번호:
+				02-000-0000 | 이메일: info@humaniz.com
+			</p>
+			<p class="footer__copyright">
+				Copyright &copy; Humaniz. All rights reserved.
+			</p>
+		</footer>
+	</body>
 </html>

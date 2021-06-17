@@ -1,458 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/resources/slick/slick.css" />
-    <link rel="stylesheet" href="/resources/slick/slick-theme.css" />
-    <script src="/resources/lib/jquery-3.6.0.min.js"></script>
-    <script src="/resources/slick/slick.min.js"></script>
-    <script defer src="/js/script.js"></script>
-    <title>Humaniz</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="resources/favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="resources/favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="resources/favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="resources/favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="resources/favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="resources/favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="resources/favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="resources/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="resources/favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="resources/favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="resources/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="resources/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="resources/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="resources/favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__box">
-        <a href="/" class="header__box__logo--link">
-          <img
-            src="/resources/img/logo-small.png"
-            alt="Humaniz logo"
-            class="header__box__logo"
-          />
-        </a>
-        <form action="#" class="search">
-          <input type="text" class="search__input" placeholder="검색" />
-          <button class="search__btn">
-            <svg class="search__icon">
-              <use xlink:href="/resources/icon/sprite.svg#icon-search"></use>
-            </svg>
-          </button>
-        </form>
-        <div class="user-nav">
-          <a href="/login.html" class="user-nav__link user-nav__link--login"
-            >Login</a
-          >
-          <ul class="user-nav__sub">
-            <li class="user-nav__sub__item">
-              <a
-                href="/mypage.html"
-                class="user-nav__link user-nav__link--mypage"
-                >MyPage</a
-              >
-            </li>
-            <li class="user-nav__sub__item">
-              <a href="/" class="user-nav__link user-nav__link--logout"
-                >Logout</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="menu-nav">
-          <button class="btn__menu">
-            <svg class="btn__menu--icon">
-              <use xlink:href="/resources/icon/sprite.svg#icon-menu"></use>
-            </svg>
-          </button>
-          <ul class="menu-nav__sub">
-            <li class="menu-nav__sub__item">
-              <a href="#" class="menu-nav__sub__link">전체</a>
-            </li>
-            <li class="menu-nav__sub__item">
-              <a href="#" class="menu-nav__sub__link">주제별</a>
-            </li>
-            <li class="menu-nav__sub__item">
-              <a href="#" class="menu-nav__sub__link">연령별</a>
-            </li>
-            <li class="menu-nav__sub__item">
-              <a href="#" class="menu-nav__sub__link">테마별</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <main class="main__mypage">
-      <section class="section-user">
-        <div class="section-user__user-info">
-          <div class="section-user__user-info__profile">
-            <svg class="section-user__user-info__profile--icon">
-              <use xlink:href="/resources/icon/sprite.svg#icon-user"></use>
-            </svg>
-          </div>
-          <div class="section-user__user-info__welcome">
-            <h4 class="heading-4 section-user__user-info__welcome--name">
-              <strong>{이름}</strong> 님
-            </h4>
-            <p class="section-user__user-info__welcome--text">
-              휴머니즈에 오신 것을 환영합니다.
-            </p>
-          </div>
-          <button class="btn-logout section-user__user-info__btn--logout">
-            로그아웃
-          </button>
-          <a
-            href="#"
-            class="btn-withdrawal section-user__user-info__btn--withdrawal"
-            >회원탈퇴</a
-          >
-          <a href="#" class="btn-service section-user__user-info__btn--service"
-            >고객센터</a
-          >
-        </div>
-        <div class="section-user__user-nav">
-          <ul class="section-user__user-nav__list">
-            <li>
-              <a href="#" class="section-user__user-nav__item">회원정보 수정</a>
-              <span class="section-user__user-nav__item--line">|</span>
-            </li>
-            <li>
-              <a href="#" class="section-user__user-nav__item"
-                >멤버십 구독 현황</a
-              ><span class="section-user__user-nav__item--line">|</span>
-            </li>
-            <li>
-              <a href="#" class="section-user__user-nav__item">MY 컨텐츠</a
-              ><span class="section-user__user-nav__item--line">|</span>
-            </li>
-            <li>
-              <a href="#" class="section-user__user-nav__item">쿠폰함</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="section-content">
-        <article class="article__edit-info">
-          <h3 class="heading-4 article__edit-info__title">회원 정보</h3>
-          <form action="" method="post" class="form__edit">
-            <div class="pw">
-              <label for="pw" class="form__edit__label">비밀번호 변경</label>
-              <input
-                type="password"
-                id="pw"
-                name="pw"
-                placeholder="변경할 비밀번호를 입력해주세요."
-                class="form__edit__input"
-              />
-            </div>
-            <div class="pw-check">
-              <label for="pw-check" class="form__edit__label"
-                >변경할 비밀번호 확인</label
-              >
-              <input
-                type="password"
-                id="pw-check"
-                name="pw-check"
-                placeholder="변경할 비밀번호를 한 번 더 입력해주세요."
-                class="form__edit__input"
-              />
-            </div>
-            <div class="name">
-              <label for="name" class="form__edit__label">이름 수정</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="홍길동"
-                class="form__edit__input"
-              />
-            </div>
-            <div class="email">
-              <label for="email" class="form__edit__label">이메일 수정</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="example@humaniz.com"
-                class="form__edit__input"
-              />
-            </div>
-            <div class="phone">
-              <label for="phone" class="form__edit__label">전화번호 수정</label>
-              <input
-                type="text"
-                id="phone"
-                name="phone"
-                placeholder="010-0000-0000"
-                class="form__edit__input"
-              />
-            </div>
-            <div class="birth">
-              <label for="birth" class="form__edit__label">생년월일 수정</label>
-              <input
-                type="text"
-                id="birth"
-                name="birth"
-                placeholder="YYYY-MM-DD"
-                class="form__edit__input"
-              />
-            </div>
-            <div class="interest">
-              <label for="interest" class="form__edit__label"
-                >관심사 수정<span>(3개 이상 선택해주세요)</span></label
-              >
-              <div class="interest__box">
-                <button type="button" class="btn-interest btn-interest--choice">
-                  관심사
-                </button>
-                <button type="button" class="btn-interest btn-interest--choice">
-                  관심사
-                </button>
-                <button type="button" class="btn-interest btn-interest--choice">
-                  관심사
-                </button>
-                <button type="button" class="btn-interest">관심사</button>
-                <button type="button" class="btn-interest">관심사</button>
-                <button type="button" class="btn-interest">관심사</button>
-                <button type="button" class="btn-interest">관심사</button>
-                <button type="button" class="btn-interest">관심사</button>
-                <button type="button" class="btn-interest">관심사</button>
-                <button type="button" class="btn-interest">관심사</button>
-                <button type="button" class="btn-interest">관심사</button>
-                <button type="button" class="btn-interest">관심사</button>
-                <button type="button" class="btn-interest">관심사</button>
-                <button type="button" class="btn-interest">관심사</button>
-                <button type="button" class="btn-interest">관심사</button>
-              </div>
-            </div>
-            <button class="btn-submit form__edit__btn">수정하기</button>
-          </form>
-        </article>
-        <article class="article__my-subscribe">
-          <h3 class="heading-4 article__my-subscribe__title">
-            현재 구독중인 멤버십
-          </h3>
-          <div class="card article__my-subscribe__card">
-            <h1 class="heading-1 card__price">월 5,000원</h1>
-            <p class="card__month">3개월권 [첫 달 0원]</p>
-            <div class="card__discount"><span>15%</span></div>
-            <hr class="card__line" />
-            <p class="card__notice">※ 3개월마다 15,000원 결제</p>
-          </div>
-          <p class="article__my-subscribe__date">
-            <span class="article__my-subscribe__date--start">
-              <strong>구독 시작일</strong> 2021년 04월 24일</span
-            >
-            <span class="article__my-subscribe__date--end">
-              <strong>구독 만료일</strong> 2021년 07월 24일</span
-            >
-          </p>
-          <a href="#" class="btn article__my-subscribe__btn"
-            >구독 멤버십 변경하기</a
-          >
-        </article>
-        <article class="article__my-contents">
-          <h3 class="heading-4 article__my-contents__title">좋아요한 컨텐츠</h3>
-          <div class="my-contents__box">
-            <a href="#" class="my-contents__box__btn-close">&times;</a>
-            <img
-              src="/resources/img/mock_img.jpg"
-              alt="Content thumbnail"
-              class="my-contents__box__thumbnail"
-            />
-            <div class="my-contents__box__description">
-              <div class="my-contents__box__description__title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit dolore
-                unde minima.
-              </div>
-              <ul class="my-contents__box__description__hashtags">
-                <li class="my-contents__box__description__hashtags--item">
-                  #해시태그
-                </li>
-                <li class="my-contents__box__description__hashtags--item">
-                  #해시태그
-                </li>
-                <li class="my-contents__box__description__hashtags--item">
-                  #해시태그
-                </li>
-              </ul>
-            </div>
-          </div>
-          <h3 class="heading-4 article__my-contents__title">북마크한 컨텐츠</h3>
-          <div class="my-contents__box">
-            <a href="#" class="my-contents__box__btn-close">&times;</a>
-            <img
-              src="/resources/img/mock_img.jpg"
-              alt="Content thumbnail"
-              class="my-contents__box__thumbnail"
-            />
-            <div class="my-contents__box__description">
-              <div class="my-contents__box__description__title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit dolore
-                unde minima.
-              </div>
-              <ul class="my-contents__box__description__hashtags">
-                <li class="my-contents__box__description__hashtags--item">
-                  #해시태그
-                </li>
-                <li class="my-contents__box__description__hashtags--item">
-                  #해시태그
-                </li>
-                <li class="my-contents__box__description__hashtags--item">
-                  #해시태그
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-        <article class="article__coupon">
-          <h3 class="heading-4 article__coupon__title">현재 보유중인 쿠폰</h3>
-          <div class="coupon__box">
-            <p class="coupon__box__name">친구추천 이벤트</p>
-            <h5 class="heading-5 coupon__box__title">
-              멤버십 구독 한달 무료 쿠폰
-            </h5>
-            <p class="coupon__box__duration">
-              유효기간: 2021. 04. 01 ~ 2022. 04. 01
-            </p>
-            <p class="coupon__box__notice">
-              ※ 본 쿠폰은 <strong>1회만</strong> 사용 가능합니다.
-            </p>
-            <a href="#" class="coupon__box__use">사용하기</a>
-          </div>
-          <h3 class="heading-4 article__coupon__title">만료된 쿠폰</h3>
-        </article>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__nav">
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#" class="footer__link">회사소개</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">채용정보</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">개인정보처리방침</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">이용약관</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">공지사항</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">고객센터</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">도움말</a>
-          </li>
-        </ul>
-      </div>
-      <hr />
-      <div class="footer__box">
-        <div class="footer__box--logo">
-          <img
-            src="/resources/img/logo-footer.png"
-            alt="Footer logo"
-            class="footer__logo"
-          />
-          <span>(주)휴머니즈</span>
-        </div>
-        <div class="footer__box--sns">
-          <svg class="footer__sns__icon">
-            <use xlink:href="/resources/icon/sprite.svg#icon-facebook"></use>
-          </svg>
-          <svg class="footer__sns__icon">
-            <use xlink:href="/resources/icon/sprite.svg#icon-twitter"></use>
-          </svg>
-          <svg class="footer__sns__icon">
-            <use xlink:href="/resources/icon/sprite.svg#icon-instagram"></use>
-          </svg>
-          <svg class="footer__sns__icon">
-            <use xlink:href="/resources/icon/sprite.svg#icon-youtube"></use>
-          </svg>
-        </div>
-      </div>
-      <p class="footer__text">
-        대표자: 안솔 | 사업자번호: 000-00-00000 | 통신판매업: 2021-00000-0000
-        <br />
-        주소: 서울특별시 아무개구 아무개로 000 아무개건물 000-0호 | 대표번호:
-        02-000-0000 | 이메일: info@humaniz.com
-      </p>
-      <p class="footer__copyright">
-        Copyright &copy; Humaniz. All rights reserved.
-      </p>
-    </footer>
-    <script src="/resources/slick/slick.min.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/resources/slick/slick.css" />
+		<link rel="stylesheet" href="/resources/slick/slick-theme.css" />
+		<script src="/resources/lib/jquery-3.6.0.min.js"></script>
+		<script src="/resources/slick/slick.min.js"></script>
+		<script defer src="/js/script.js"></script>
+		<title>Humaniz</title>
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="resources/favicon/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="resources/favicon/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="resources/favicon/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="resources/favicon/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="resources/favicon/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="resources/favicon/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="resources/favicon/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="resources/favicon/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="resources/favicon/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="resources/favicon/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="resources/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="resources/favicon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="resources/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="resources/favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__box">
+				<a href="/" class="header__box__logo--link">
+					<img
+						src="/resources/img/logo-small.png"
+						alt="Humaniz logo"
+						class="header__box__logo"
+					/>
+				</a>
+				<form action="#" class="search">
+					<input type="text" class="search__input" placeholder="검색" />
+					<button class="search__btn">
+						<svg class="search__icon">
+							<use xlink:href="/resources/icon/sprite.svg#icon-search"></use>
+						</svg>
+					</button>
+				</form>
+				<div class="user-nav">
+					<a href="/login.html" class="user-nav__link user-nav__link--login"
+						>Login</a
+					>
+					<ul class="user-nav__sub">
+						<li class="user-nav__sub__item">
+							<a
+								href="/mypage.html"
+								class="user-nav__link user-nav__link--mypage"
+								>MyPage</a
+							>
+						</li>
+						<li class="user-nav__sub__item">
+							<a href="/" class="user-nav__link user-nav__link--logout"
+								>Logout</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="menu-nav">
+					<button class="btn__menu">
+						<svg class="btn__menu--icon">
+							<use xlink:href="/resources/icon/sprite.svg#icon-menu"></use>
+						</svg>
+					</button>
+					<ul class="menu-nav__sub">
+						<li class="menu-nav__sub__item">
+							<a href="#" class="menu-nav__sub__link">전체</a>
+						</li>
+						<li class="menu-nav__sub__item">
+							<a href="#" class="menu-nav__sub__link">주제별</a>
+						</li>
+						<li class="menu-nav__sub__item">
+							<a href="#" class="menu-nav__sub__link">연령별</a>
+						</li>
+						<li class="menu-nav__sub__item">
+							<a href="#" class="menu-nav__sub__link">테마별</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="main__mypage">
+			<section class="section-user">
+				<div class="section-user__user-info">
+					<div class="section-user__user-info__profile">
+						<svg class="section-user__user-info__profile--icon">
+							<use xlink:href="/resources/icon/sprite.svg#icon-user"></use>
+						</svg>
+					</div>
+					<div class="section-user__user-info__welcome">
+						<h4 class="heading-4 section-user__user-info__welcome--name">
+							<strong>{이름}</strong> 님
+						</h4>
+						<p class="section-user__user-info__welcome--text">
+							휴머니즈에 오신 것을 환영합니다.
+						</p>
+					</div>
+					<button class="btn-logout section-user__user-info__btn--logout">
+						로그아웃
+					</button>
+					<a
+						href="#"
+						class="btn-withdrawal section-user__user-info__btn--withdrawal"
+						>회원탈퇴</a
+					>
+					<a href="#" class="btn-service section-user__user-info__btn--service"
+						>고객센터</a
+					>
+				</div>
+				<div class="section-user__user-nav">
+					<ul class="section-user__user-nav__list">
+						<li>
+							<a href="#" class="section-user__user-nav__item">회원정보 수정</a>
+							<span class="section-user__user-nav__item--line">|</span>
+						</li>
+						<li>
+							<a href="#" class="section-user__user-nav__item"
+								>멤버십 구독 현황</a
+							><span class="section-user__user-nav__item--line">|</span>
+						</li>
+						<li>
+							<a href="#" class="section-user__user-nav__item">MY 컨텐츠</a
+							><span class="section-user__user-nav__item--line">|</span>
+						</li>
+						<li>
+							<a href="#" class="section-user__user-nav__item">쿠폰함</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="section-content">
+				<article class="article__edit-info">
+					<h3 class="heading-4 article__edit-info__title">회원 정보</h3>
+					<form action="" method="post" class="form__edit">
+						<div class="pw">
+							<label for="pw" class="form__edit__label">비밀번호 변경</label>
+							<input
+								type="password"
+								id="pw"
+								name="pw"
+								placeholder="변경할 비밀번호를 입력해주세요."
+								class="form__edit__input"
+							/>
+						</div>
+						<div class="pw-check">
+							<label for="pw-check" class="form__edit__label"
+								>변경할 비밀번호 확인</label
+							>
+							<input
+								type="password"
+								id="pw-check"
+								name="pw-check"
+								placeholder="변경할 비밀번호를 한 번 더 입력해주세요."
+								class="form__edit__input"
+							/>
+						</div>
+						<div class="name">
+							<label for="name" class="form__edit__label">이름 수정</label>
+							<input
+								type="text"
+								id="name"
+								name="name"
+								placeholder="홍길동"
+								class="form__edit__input"
+							/>
+						</div>
+						<div class="email">
+							<label for="email" class="form__edit__label">이메일 수정</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="example@humaniz.com"
+								class="form__edit__input"
+							/>
+						</div>
+						<div class="phone">
+							<label for="phone" class="form__edit__label">전화번호 수정</label>
+							<input
+								type="text"
+								id="phone"
+								name="phone"
+								placeholder="010-0000-0000"
+								class="form__edit__input"
+							/>
+						</div>
+						<div class="birth">
+							<label for="birth" class="form__edit__label">생년월일 수정</label>
+							<input
+								type="text"
+								id="birth"
+								name="birth"
+								placeholder="YYYY-MM-DD"
+								class="form__edit__input"
+							/>
+						</div>
+						<div class="interest">
+							<label for="interest" class="form__edit__label"
+								>관심사 수정<span>(3개 이상 선택해주세요)</span></label
+							>
+							<div class="interest__box">
+								<button type="button" class="btn-interest btn-interest--choice">
+									관심사
+								</button>
+								<button type="button" class="btn-interest btn-interest--choice">
+									관심사
+								</button>
+								<button type="button" class="btn-interest btn-interest--choice">
+									관심사
+								</button>
+								<button type="button" class="btn-interest">관심사</button>
+								<button type="button" class="btn-interest">관심사</button>
+								<button type="button" class="btn-interest">관심사</button>
+								<button type="button" class="btn-interest">관심사</button>
+								<button type="button" class="btn-interest">관심사</button>
+								<button type="button" class="btn-interest">관심사</button>
+								<button type="button" class="btn-interest">관심사</button>
+								<button type="button" class="btn-interest">관심사</button>
+								<button type="button" class="btn-interest">관심사</button>
+								<button type="button" class="btn-interest">관심사</button>
+								<button type="button" class="btn-interest">관심사</button>
+								<button type="button" class="btn-interest">관심사</button>
+							</div>
+						</div>
+						<button class="btn-submit form__edit__btn">수정하기</button>
+					</form>
+				</article>
+				<article class="article__my-subscribe">
+					<h3 class="heading-4 article__my-subscribe__title">
+						현재 구독중인 멤버십
+					</h3>
+					<div class="card article__my-subscribe__card">
+						<h1 class="heading-1 card__price">월 5,000원</h1>
+						<p class="card__month">3개월권 [첫 달 0원]</p>
+						<div class="card__discount"><span>15%</span></div>
+						<hr class="card__line" />
+						<p class="card__notice">※ 3개월마다 15,000원 결제</p>
+					</div>
+					<p class="article__my-subscribe__date">
+						<span class="article__my-subscribe__date--start">
+							<strong>구독 시작일</strong> 2021년 04월 24일</span
+						>
+						<span class="article__my-subscribe__date--end">
+							<strong>구독 만료일</strong> 2021년 07월 24일</span
+						>
+					</p>
+					<a href="#" class="btn article__my-subscribe__btn"
+						>구독 멤버십 변경하기</a
+					>
+				</article>
+				<article class="article__my-contents">
+					<h3 class="heading-4 article__my-contents__title">좋아요한 컨텐츠</h3>
+					<div class="my-contents__box">
+						<a href="#" class="my-contents__box__btn-close">&times;</a>
+						<img
+							src="/resources/img/mock_img.jpg"
+							alt="Content thumbnail"
+							class="my-contents__box__thumbnail"
+						/>
+						<div class="my-contents__box__description">
+							<div class="my-contents__box__description__title">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit dolore
+								unde minima.
+							</div>
+							<ul class="my-contents__box__description__hashtags">
+								<li class="my-contents__box__description__hashtags--item">
+									#해시태그
+								</li>
+								<li class="my-contents__box__description__hashtags--item">
+									#해시태그
+								</li>
+								<li class="my-contents__box__description__hashtags--item">
+									#해시태그
+								</li>
+							</ul>
+						</div>
+					</div>
+					<h3 class="heading-4 article__my-contents__title">북마크한 컨텐츠</h3>
+					<div class="my-contents__box">
+						<a href="#" class="my-contents__box__btn-close">&times;</a>
+						<img
+							src="/resources/img/mock_img.jpg"
+							alt="Content thumbnail"
+							class="my-contents__box__thumbnail"
+						/>
+						<div class="my-contents__box__description">
+							<div class="my-contents__box__description__title">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit dolore
+								unde minima.
+							</div>
+							<ul class="my-contents__box__description__hashtags">
+								<li class="my-contents__box__description__hashtags--item">
+									#해시태그
+								</li>
+								<li class="my-contents__box__description__hashtags--item">
+									#해시태그
+								</li>
+								<li class="my-contents__box__description__hashtags--item">
+									#해시태그
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+				<article class="article__coupon">
+					<h3 class="heading-4 article__coupon__title">현재 보유중인 쿠폰</h3>
+					<div class="coupon__box">
+						<p class="coupon__box__name">친구추천 이벤트</p>
+						<h5 class="heading-5 coupon__box__title">
+							멤버십 구독 한달 무료 쿠폰
+						</h5>
+						<p class="coupon__box__duration">
+							유효기간: 2021. 04. 01 ~ 2022. 04. 01
+						</p>
+						<p class="coupon__box__notice">
+							※ 본 쿠폰은 <strong>1회만</strong> 사용 가능합니다.
+						</p>
+						<a href="#" class="coupon__box__use">사용하기</a>
+					</div>
+					<h3 class="heading-4 article__coupon__title">만료된 쿠폰</h3>
+				</article>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__nav">
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link">회사소개</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">채용정보</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">개인정보처리방침</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">이용약관</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">공지사항</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">고객센터</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">도움말</a>
+					</li>
+				</ul>
+			</div>
+			<hr />
+			<div class="footer__box">
+				<div class="footer__box--logo">
+					<img
+						src="/resources/img/logo-footer.png"
+						alt="Footer logo"
+						class="footer__logo"
+					/>
+					<span>(주)휴머니즈</span>
+				</div>
+				<div class="footer__box--sns">
+					<svg class="footer__sns__icon">
+						<use xlink:href="/resources/icon/sprite.svg#icon-facebook"></use>
+					</svg>
+					<svg class="footer__sns__icon">
+						<use xlink:href="/resources/icon/sprite.svg#icon-twitter"></use>
+					</svg>
+					<svg class="footer__sns__icon">
+						<use xlink:href="/resources/icon/sprite.svg#icon-instagram"></use>
+					</svg>
+					<svg class="footer__sns__icon">
+						<use xlink:href="/resources/icon/sprite.svg#icon-youtube"></use>
+					</svg>
+				</div>
+			</div>
+			<p class="footer__text">
+				대표자: 안솔 | 사업자번호: 000-00-00000 | 통신판매업: 2021-00000-0000
+				<br />
+				주소: 서울특별시 아무개구 아무개로 000 아무개건물 000-0호 | 대표번호:
+				02-000-0000 | 이메일: info@humaniz.com
+			</p>
+			<p class="footer__copyright">
+				Copyright &copy; Humaniz. All rights reserved.
+			</p>
+		</footer>
+		<script src="/resources/slick/slick.min.js"></script>
+	</body>
 </html>
