@@ -175,7 +175,7 @@ $(function () {
 		}
 	});
 
-	///////////////////////////SEARCHBAR/////////////////////////////
+	///////////////////////////SEARCH BAR/////////////////////////////
 	// autocomplete
 	const availableKeywords = [
 		"동양철학",
@@ -197,7 +197,7 @@ $(function () {
 		source: availableKeywords,
 	});
 
-	///////////////////////////FLOATINGBAR/////////////////////////////
+	///////////////////////////FLOATING BAR/////////////////////////////
 	const curPosition = $(".floating-bar").css("top");
 	$(window).scroll(function () {
 		const position = $(window).scrollTop();
@@ -205,26 +205,53 @@ $(function () {
 			.stop()
 			.animate({ top: position + curPosition + "px" }, 1000);
 	});
-});
 
-///////////////////////////EVENTCODE/////////////////////////////
-$(".event-code__btn--default").on("click", function (e) {
-	e.preventDefault();
-	$(".event-code__input").val("AA1-B2BB-CC3").css({ "text-align": "center" });
-	$(this)
-		.css({
-			"background-color": "#f6f6f6",
-			color: "#ec652b",
-		})
-		.removeClass("event-code__btn--default")
-		.addClass("event-code__btn--share")
-		.html("친구에게 공유하기");
-	$(".event-code__btn--share").on("click", function () {
+	///////////////////////////EVENTCODE/////////////////////////////
+	$(".event-code__btn--default").on("click", function (e) {
+		e.preventDefault();
+		$(".event-code__input").val("AA1-B2BB-CC3").css({ "text-align": "center" });
 		$(this)
-			.next()
-			.append("<p>추천인 코드가 성공적으로 공유되었습니다.</p>")
-			.css({ color: "#ec652b", "font-size": "16px" });
+			.css({
+				"background-color": "#f6f6f6",
+				color: "#ec652b",
+			})
+			.removeClass("event-code__btn--default")
+			.addClass("event-code__btn--share")
+			.html("친구에게 공유하기");
+		$(".event-code__btn--share").on("click", function () {
+			$(this)
+				.next()
+				.append("<p>추천인 코드가 성공적으로 공유되었습니다.</p>")
+				.css({ color: "#ec652b", "font-size": "16px" });
+		});
+	});
+	//////////////////////////DYNAMIC LOADING////////////////////////
+	// about page section-content
+	const [...allSection] = $(".main__about > .section-content");
+	const sectionLoad = new IntersectionObserver(function (entries, observer) {
+		entries.forEach((entry) => {
+			if (!entry.isIntersecting) return;
+			entry.target.classList.add("animate__animated", "animate__fadeInUp");
+			observer.unobserve(entry.target);
+		});
+	});
+	allSection.forEach((section) =>
+		sectionLoad.observe(section, {
+			root: null,
+			threshould: 0.15,
+		})
+	);
+
+	//////////////////////////ANIMATION////////////////////////
+	// about page section-feature
+	$(window).on("scroll", function () {
+		const featureSec = $(".section-features")[0];
+		const [...featureIcons] = $(".section-features__icon");
+		let featureSecPos = featureSec.getBoundingClientRect().top;
+		if (featureSecPos === 0) {
+			featureIcons.forEach((icon) => {
+				icon.style.animation = "scale 2s 1s";
+			});
+		}
 	});
 });
-
-///////////////////////////ANIMATION/////////////////////////////
