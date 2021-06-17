@@ -53,18 +53,14 @@ $(function () {
 
 	///////////////////////////ACCORDION////////////////////////////
 	// agreement accordion
-	$(".paragraph").not(".paragraph.active").hide();
+	$(".paragraph").hide();
 	$(".agreement__box__checkbox").on("click", function () {
-		$(this).addClass("select");
-		$(".agreement__box__checkbox").not(this).removeClass("select");
-		$(".paragraph").removeClass("active");
-		$($(this)).children(".paragraph").addClass("active");
-		$(".paragraph")
-			.not(".paragraph.active")
-			.stop()
-			.slideUp(500, function () {
-				$(".paragraph.active").stop().slideDown(500);
-			});
+		if (!$(this).children(".paragraph").hasClass("active")) {
+			$(".paragraph").slideUp(500);
+			$(this).children(".paragraph").slideDown(500);
+			$(".paragraph").removeClass("active");
+			$(this).children(".paragraph").addClass("active");
+		}
 	});
 
 	// list sidebar accordion
@@ -155,13 +151,11 @@ $(function () {
 		e.preventDefault();
 		$(".modal-window").removeClass("hidden");
 		$(".overlay").removeClass("hidden");
-		console.log(1);
 	});
 
 	$(".btn-close").on("click", function () {
 		$(".modal-window").addClass("hidden");
 		$(".overlay").addClass("hidden");
-		console.log(2);
 	});
 
 	$(".overlay").on("click", function () {
@@ -214,5 +208,3 @@ $(function () {
 });
 
 ///////////////////////////ANIMATION/////////////////////////////
-
-///////////////////////////MODAL POPUP/////////////////////////////
