@@ -207,4 +207,24 @@ $(function () {
 	});
 });
 
+///////////////////////////EVENTCODE/////////////////////////////
+$(".event-code__btn--default").on("click", function (e) {
+	e.preventDefault();
+	$(".event-code__input").val("AA1-B2BB-CC3").css({ "text-align": "center" });
+	$(this)
+		.css({
+			"background-color": "#f6f6f6",
+			color: "#ec652b",
+		})
+		.removeClass("event-code__btn--default")
+		.addClass("event-code__btn--share")
+		.html("친구에게 공유하기");
+	$(".event-code__btn--share").on("click", function () {
+		$(this)
+			.next()
+			.append("<p>추천인 코드가 성공적으로 공유되었습니다.</p>")
+			.css({ color: "#ec652b", "font-size": "16px" });
+	});
+});
+
 ///////////////////////////ANIMATION/////////////////////////////

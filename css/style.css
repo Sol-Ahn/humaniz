@@ -1003,10 +1003,16 @@ body {
     font-family: inherit;
     padding: 1.5rem;
     display: inline-block; }
-  .main__event .section-content .event-code__btn {
+  .main__event .section-content .event-code__btn--default {
     width: 24.4rem;
     font-size: 1.6rem;
     background-color: #ec652b;
+    border-radius: 3rem; }
+  .main__event .section-content .event-code__btn--share {
+    width: 24.4rem;
+    font-size: 1.6rem;
+    color: #ec652b;
+    background-color: #f6f6f6;
     border-radius: 3rem; }
 
 .main__event .section-content .event-container {
