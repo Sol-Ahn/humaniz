@@ -235,6 +235,7 @@ $(function () {
 			observer.unobserve(entry.target);
 		});
 	});
+
 	allSection.forEach((section) =>
 		sectionLoad.observe(section, {
 			root: null,
@@ -242,16 +243,49 @@ $(function () {
 		})
 	);
 
+	// detail page article
+	const [...allArticle] = $(".article__contents-detail");
+	const articleLoad = new IntersectionObserver(function (entries, observer) {
+		entries.forEach((entry) => {
+			console.log(entry);
+			if (!entry.isIntersecting) return;
+			entry.target.classList.add("animate__animated", "animate__fadeInUp");
+			observer.unobserve(entry.target);
+		});
+	});
+
+	allArticle.forEach((article) =>
+		articleLoad.observe(article, {
+			root: null,
+			threshould: 0.1,
+		})
+	);
+
 	//////////////////////////ANIMATION////////////////////////
 	// about page section-feature
+	const features = $(".section-features")[0];
+	const [...featureIcons] = $(".section-features__icon");
 	$(window).on("scroll", function () {
-		const featureSec = $(".section-features")[0];
-		const [...featureIcons] = $(".section-features__icon");
-		let featureSecPos = featureSec.getBoundingClientRect().top;
-		if (featureSecPos === 0) {
+		if (!features) return;
+		let featureSecPos = features.getBoundingClientRect().top;
+		if (featureSecPos < 0) {
 			featureIcons.forEach((icon) => {
-				icon.style.animation = "scale 2s 1s";
+				icon.style.animation = "scale 2s 1s infinite";
 			});
+		}
+	});
+
+	// subscribe page hero
+	$(".main__subscribe .section-hero__box__img").addClass(
+		"animate__animated animate__flash"
+	);
+
+	const cards = $(".section-content__container__cards")[0];
+	$(window).on("scroll", function () {
+		if (!cards) return;
+		let cardsPos = cards.getBoundingClientRect().top;
+		if (cardsPos < 0) {
+			$(".card--2").addClass("animate__animated animate__pulse");
 		}
 	});
 });
