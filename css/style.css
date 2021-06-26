@@ -602,6 +602,15 @@ body {
         background-position: 100%;
         color: #2196f3; }
 
+.sticky {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  margin: 0 !important;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; }
+
 .hero {
   display: flex;
   justify-content: space-between; }
@@ -705,7 +714,7 @@ body {
   grid-row-gap: 6.4rem; }
 
 .header {
-  margin: 2rem 0;
+  width: 100%;
   font-size: 1.6rem; }
 
 .hero {

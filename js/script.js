@@ -288,4 +288,13 @@ $(function () {
 			$(".card--2").addClass("animate__animated animate__pulse");
 		}
 	});
+
+	//////////////////////////STICKY HEADER////////////////////////
+	const header = $(".header")[0];
+	const headerHeight = header.getBoundingClientRect().height;
+
+	$(window).on("scroll", function () {
+		if (scrollY > headerHeight) $(".header").addClass("sticky");
+		else $(".header").removeClass("sticky");
+	});
 });
